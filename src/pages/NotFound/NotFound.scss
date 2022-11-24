@@ -1,0 +1,44 @@
+.notfound-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 40px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  img {
+    width: 75%;
+    height: 75%;
+  }
+  #notFound {
+    color: rgb(207, 243, 95);
+    font-family: 'PiecesNfi', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  p {
+    color: rgb(207, 243, 95);
+    font-family: 'PiecesNfi', Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 45px;
+    margin-bottom: 0px;
+  }
+  @media(min-width: 1115px){
+    #notFound {
+      font-size: 80px;
+    }
+    img {
+      width: 45%;
+      height: 45%;
+    }
+    p {
+      color: rgb(207, 243, 95);
+      font-family: 'PiecesNfi', Arial, sans-serif;
+      font-size: 30px;
+      margin-top: 50px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
