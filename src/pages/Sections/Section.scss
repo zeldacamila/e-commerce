@@ -1,0 +1,35 @@
+@use '../../variables';
+
+@font-face {
+  font-family: 'PiecesNfi';
+  src: url(../../fonts/PiecesNfi-LrOn.ttf) format('truetype');
+}
+
+.section-container {
+  h1 {
+    color: rgb(207, 243, 95);
+    font-family: 'PiecesNfi', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-shadow:
+    0 0 7px rgb(0, 115, 0),
+    0 0 10px rgb(0, 115, 0),
+    0 0 21px rgb(0, 115, 0),
+    0 0 42px rgb(0, 115, 0),
+    0 0 82px rgb(0, 115, 0)
+  }
+}
+
+.section_products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 80px;
+}

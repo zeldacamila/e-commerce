@@ -5,15 +5,16 @@
 @import './App.scss';
 
 @import './components/Button/Button.scss';
+@import './components/Button2/Button2.scss';
+@import './components/ButtonProduct/ButtonProduct.scss';
 @import './components/CategoryCard/CategoryCard.scss';
 @import './components/Header/Header.scss';
+@import './components/ProductCard/ProductCard.scss';
 
 @import './pages/NotFound/NotFound.scss';
 @import './pages/Home/Home.scss';
 @import './pages/Sections/Section.scss';
 @import './pages/ProductPage/ProductPage.scss';
 
-
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Oswald:wght@700&display=swap');

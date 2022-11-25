@@ -2,126 +2,17 @@
 @use '../../mixins';
 
 .header_logo {
-  height: 70%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 80%;
+  cursor: pointer;
 }
 
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 68px;
+  justify-content: center;
+  height: 110px;
+  border-bottom: 2px solid rgb(1, 138, 0);
   padding: 0 24px;
-  @media (min-width: 1115px){
-    height: 112px;
-    border-bottom: 1px solid variables.$Grayish-blue;
-  }
-  &_navigation{
-    width: 175px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    @media (min-width: 1115px){
-      width: 200px;
-    }
-  }
-  &_menu{
-    &:hover{
-      cursor: pointer;
-    }
-    @media (min-width: 1115px){
-      display: none;
-    }
-  }
-  &_cart-avatar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 70px;
-    @media (min-width: 1115px){
-      width: 125px;
-    }
-  }
-  &_cart{
-    position: relative;
-    &-notification{
-      display: none;
-      background-color: variables.$Orange;
-      width: 15px;
-      border-radius: 16px;
-      position: absolute;
-      top: -2px;
-      right: -5px;
-      font-size: 0.6em;
-      text-align: center;
-      color: variables.$White;
-    }
-    &:hover{
-      cursor: pointer;
-    }
-  }
-  &_avatar{
-    width: 24px;
-    @media (min-width: 1115px){
-      width: 48px;
-    }
-    &:hover{
-      cursor: pointer;
-      border: 2px solid variables.$Orange;
-      border-radius: 50%;
-    }
-  }
 }
-
-
-.navbar {
-  display: none;
-  width: 540px;
-  &_items{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-  }
-  &_link{
-    text-decoration: none;
-    color: variables.$Dark-grayish-blue;
-    display: block;
-    height: 112px;
-    padding-top: 42px;
-    &:hover{
-      border-bottom: 4px solid variables.$Orange;
-    }
-  }
-  @media (min-width: 1115px){
-    display: none;
-  }
-}
-
-.modal-navbar {
-  display: none;
-  &_background{
-    @include mixins.modal-background;
-  }
-  background-color: variables.$White;
-  width: 250px;
-  height: 100vh;
-  padding: 28px 24px;
-  &_items{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 350px;
-    list-style: none;
-    margin-top: 40px;
-  }
-  &_link{
-    text-decoration: none;
-    color: variables.$Very-dark-blue;
-    font-weight: 700;
-    font-size: 1.1em;
-  }
-  &_close-icon:hover{
-    cursor: pointer;
-  }
-}
-

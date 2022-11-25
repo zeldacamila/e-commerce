@@ -1,15 +1,17 @@
 @use '../../variables';
-
-.button-container {
-  background-color: rgb(207, 243, 95);
-  border: 3px solid rgb(1, 138, 0);
+@font-face {
+  font-family: 'PiecesNfi';
+  src: url(../../fonts/PiecesNfi-LrOn.ttf) format('truetype');
+}
+.buttonProduct-container {
+  background-color: rgba(206, 243, 95, 0);
+  border: none;
   border-radius: 8px;
   height: 35px;
-  #button-path {
-    color: #000;
-    text-decoration: none;
-    //font-family: 'PiecesNfi';
+  #buttonProduct-path {
+    color: rgb(207, 243, 95);
     font-family: variables.$Font;
+    text-decoration: none;
     font-size: 20px;
     font-weight: 700;
     
@@ -21,7 +23,7 @@
 }
 
 
-.button-container:hover {
+.buttonProduct-container:hover {
   box-shadow: 1px 1px rgb(1, 138, 0), 2px 2px rgb(1, 138, 0), 3px 3px rgb(1, 138, 0);
   transform: translateX(-3px);
   

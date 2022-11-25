@@ -1,5 +1,6 @@
 @use '../../variables';
 @use '../../mixins';
+
 .content{
   @media (min-width:1125px) {
     margin-top: 25px;
@@ -12,6 +13,7 @@
 
 }
 .gallery{
+  margin-top: 24px;
   &_image-container{
     height: 300px;
     width: 100%;
@@ -21,10 +23,10 @@
 
   }
   &_previous{
-    @include mixins.image-btn(170px, 15px, false)
+    @include mixins.image-btn(220px, 15px, false)
   }
   &_next{
-    @include mixins.image-btn(170px, 320px, false)
+    @include mixins.image-btn(220px, 320px, false)
   }
   &_thumbnails{
     display: none;
@@ -56,26 +58,31 @@
 
 .details{
   padding: 24px;
+  justify-content: center;
   &_company{
     color: rgb(1, 138, 0);
     text-transform: uppercase;
     font-size: 0.8em;
     letter-spacing: 1px;
     margin-bottom: 12px;
+    text-align: center;
   }
   &_title{
     font-size: 1.7em;
     color: rgb(207, 243, 95);
     margin-bottom: 16px;
+    text-align: center;
 }
 &_description{
     font-size: 0.94em;
     color: variables.$Light-grayish-blue;
     line-height: 24px;
     margin-bottom: 24px;
+    text-align: center;
 }
 &_price{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-bottom: 24px;
     color: rgb(1, 138, 0);
@@ -108,14 +115,15 @@
     width: 446px;
     padding-top: 60px;
     &_title{
-        font-size: 2.7em;
-        margin-bottom: 48px;
+        font-size: 2.6em;
+        margin-bottom: 37px;
         color: rgb(207, 243, 95);
     }
     &_description{
         font-size: 0.9em;
         margin-bottom: 37px;
         color: variables.$Light-grayish-blue;
+        text-align: justify;
     }
     &_price{
         flex-direction: column;

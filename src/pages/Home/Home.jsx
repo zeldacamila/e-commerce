@@ -5,12 +5,17 @@ import { Button, Modal } from 'antd'
 import { useState } from 'react'
 import 'animate.css'
 import Cookies from 'universal-cookie'
+import logosPago from '../../images/pago-logos.png'
+import papelesCategory from '../../images/papeles.jpg'
+import vidriosCategory from '../../images/vidrios.jpg'
+import fuegoCategory from '../../images/fuego.png'
+import electroCategory from '../../images/electronicos.jpg'
 
 const Home = () => {
 
   const [open, setOpen] = useState(true);
   const [confirmLoading, setConfirmLoading] = useState(false);
-  const [modalText, setModalText] = useState('Para permitir tu ingreso a CannaDev verificaremos si eres mayor de edad. ¿Certificas que eres mayor de 18 años?');
+  const [modalText, setModalText] = useState('Para permitir tu ingreso a la CASA verificaremos si eres mayor de edad. ¿Certificas que eres mayor de 18 años?');
   const cookies = new Cookies()
   const handleYes = () => {
     cookies.set('modal', 'yes', {options: {path: '/', maxAge:60*60*24*30}})
@@ -23,7 +28,7 @@ const Home = () => {
       )
     } else {
       handleYes()
-      setModalText('Accediendo a CannaDev...');
+      setModalText('Accediendo a CASA MARACACHAFA...');
       setConfirmLoading(true);
       setTimeout(() => {
         setOpen(false);
@@ -39,74 +44,79 @@ const Home = () => {
     <div className='Home-container'>
       { cookies.get('modal') === 'yes' ? <></> : (
       <Modal
-        title='BIENVENIDO A CANNADEV'
+        title='BIENVENIDO A CASA MARACACHAFA'
         open={open}
         onOk={handleOk}
         confirmLoading={confirmLoading}
         onCancel={handleCancel}
         style={{
-          top: 20,
-          fontFamily:'Oswald'
+          top: 80,
+          fontFamily:'Oswald',
         }}
         footer={[
-          <Button style={{border: "2px solid #177333", color: '#177333'}} onClick={handleCancel}>
+          <Button style={{border: "2px solid rgb(1, 138, 0)", color: 'rgb(1, 138, 0)', fontFamily: 'Oswald'}} onClick={handleCancel}>
             NO
           </Button>,
-          <Button style={{border: "2px solid #177333", color: '#177333' }} onClick={handleOk}>
+          <Button style={{border: "2px solid rgb(1, 138, 0)", color: 'rgb(1, 138, 0)', fontFamily: 'Oswald' }} onClick={handleOk}>
             SÍ
           </Button>
         ]}
       >
         <p>{modalText}</p>
       </Modal>)}   
-      <p className='advertising'>Envíos gratis por compras superiores a 200.000 COP</p>
-      <h1 className='animate__animated animate__fadeInLeft'>NUESTRAS MARCAS ALIADAS</h1>
+      {/* <p className='advertising'>Envíos gratis por compras superiores a 200.000 COP</p> */}
+      {/* <h1 className='animate__animated animate__fadeInLeft'>MARCAS ALIADAS</h1> */}
     {/*   <div className='Brands-container'>
         <BrandsSlider />
       </div> */}
-      <h1 className='animate__animated animate__fadeInLeft'>¿QUÉ ESTÁS BUSCANDO?</h1>
+      <h1 className='animate__animated animate__fadeInLeft'>PRODUCTOS</h1>
       <div className='Cards-container'>
         <CategoryCard 
-          cardImage='vapes.png'
+          cardImage={papelesCategory}
           buttonTitle='PAPELES'
+          buttonPath='/collections/Paper' />
+        <CategoryCard 
+          cardImage={vidriosCategory}
+          buttonTitle='VIDRIOS'
           buttonPath='/collections/Glass' />
         <CategoryCard 
-          cardImage='bong.png'
-          buttonTitle='VIDRIOS'
-          buttonPath='/collections/Bongs' />
-        <CategoryCard 
-          cardImage='grinder.png'
+          cardImage={fuegoCategory}
           buttonTitle='FUEGO'
-          buttonPath='/collections/sectionFire' />
+          buttonPath='/collections/Fire' />
         <CategoryCard 
-          cardImage='lighter.png'
+          cardImage={electroCategory}
           buttonTitle='ELECTRONICOS'
           buttonPath='/collections/Electronics' />
         <CategoryCard 
-          cardImage='papers.png'
-          buttonTitle="ACCESORIOS PARA TU APTO"
+          cardImage={papelesCategory}
+          buttonTitle="PARA TU APTO"
           buttonPath="/collections/IndoorAccesories" />
         <CategoryCard 
-          cardImage='pipe.png'
+          cardImage={papelesCategory}
           buttonTitle='DABS'
           buttonPath='/collections/Dabs' />
         <CategoryCard 
-          cardImage='grow.png'
+          cardImage={papelesCategory}
           buttonTitle='KITS'
           buttonPath='/collections/Kits' />
         <CategoryCard 
-          cardImage='grow.png'
+          cardImage={papelesCategory}
           buttonTitle='GROW'
           buttonPath='/collections/Grow' />
          <CategoryCard 
-          cardImage='grow.png'
+          cardImage={papelesCategory}
           buttonTitle='MEDICINAL'
           buttonPath='/collections/Medicinal' />
       </div>
       
-      <h1 className='animate__animated animate__fadeInLeft'>VISITA NUESTRO BLOG</h1>
-      <div className='Blog-container'>
-
+      {/* <h1 className='animate__animated animate__fadeInLeft'>VISITA NUESTRO BLOG</h1> */}
+      <div className='InfoPago-container'>
+        <p>MEDIOS DE PAGO</p>
+        <div className='InfoPago-container_logos'>
+          <img className='logoInfoPago' src={logosPago} alt='' />
+       {/*    <img className='logoInfoPago' src={logoDV} alt=''/>
+          <img className='logoInfoPago' src={logoNQ} alt=''/> */}
+        </div>
       </div>
     </div>
   )

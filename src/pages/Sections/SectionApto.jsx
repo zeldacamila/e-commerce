@@ -2,11 +2,11 @@ import React from 'react'
 import ProductCard from '../../components/ProductCard/ProductCard'
 import FuegoIPClipper from '../../images/clipper.png'
 
-const SectionFire = () => {
+const SectionApto = () => {
   return (
     <>
       <div className='section-container'>
-        <h1>FUEGO</h1>
+        <h1>Para tu apto</h1>
         <div className='section_products'>
           <ProductCard
             productImage={FuegoIPClipper}
@@ -30,4 +30,4 @@ const SectionFire = () => {
   )
 }
 
-export default SectionFire
+export default SectionApto
