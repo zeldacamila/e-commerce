@@ -1,0 +1,18 @@
+@use '../../variables';
+@use '../../mixins';
+
+.header_logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 80%;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  border-bottom: 2px solid rgb(1, 138, 0);
+  padding: 0 24px;
+}
