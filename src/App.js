@@ -12,11 +12,13 @@ import SectionApto from './pages/Sections/SectionApto';
 import SectionKits from './pages/Sections/SectionKits';
 import SectionMedicinal from './pages/Sections/SectionMedicinal';
 import ProductPage from './pages/ProductPage/ProductPage';
+import ButtonWhatsapp from './components/ButtonWhatsapp/ButtonWhatsapp';
 
 function App() {
   return (
     <div className="main-container">
       <Header />
+      <ButtonWhatsapp />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/collections/Fire' element={<Section />} />
