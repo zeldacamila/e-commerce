@@ -18,12 +18,14 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { EffectFlip, Pagination, Navigation } from "swiper";
+import ButtonBack from '../../components/ButtonBack/ButtonBack'
 
 const ProductPage = () => {
 
   return (
     <div className='ProductPage'>
       <section className='content'>
+        <ButtonBack />
         <div className='Slider-container'>
           <Swiper
             effect={"flip"}

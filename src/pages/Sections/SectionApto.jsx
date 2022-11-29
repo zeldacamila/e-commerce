@@ -1,11 +1,13 @@
 import React from 'react'
 import ProductCard from '../../components/ProductCard/ProductCard'
 import FuegoIPClipper from '../../images/clipper.png'
+import ButtonBack from '../../components/ButtonBack/ButtonBack'
 
 const SectionApto = () => {
   return (
     <>
       <div className='section-container'>
+        <ButtonBack />
         <h1>Para tu apto</h1>
         <div className='section_products'>
           <ProductCard

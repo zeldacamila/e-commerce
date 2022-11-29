@@ -1,0 +1,19 @@
+.BackButton-container {
+  width: 80px;
+  height: 30px;
+  
+  background-color: rgba(0, 138, 0, 0.248);
+  border: 0;
+  border-radius: 5px;
+  color: rgb(1, 138, 0);
+  font-family: variables.$Font;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 5px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+/*   top: 130px;
+  left: 200px; */
+}
