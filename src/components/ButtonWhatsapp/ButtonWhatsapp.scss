@@ -1,0 +1,31 @@
+.WAButton-container {
+  background-color: transparent;
+  border: 0;
+  width: 80px;
+  height: 60px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  .logoWApc-container{
+    display: none;
+  }
+  @media(min-width: 1115px){
+    .logoWApc-container{
+      cursor: pointer;
+      display: block;
+      position: fixed;
+      bottom: 20px;
+      right: 280px;
+      width: 220px;
+      height: 80px;
+    }
+    .logoWAmobile-container{
+      display: none;
+    }
+  }
+}
+
+#logoWA {
+  height: 100%;
+}
