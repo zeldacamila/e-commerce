@@ -1,4 +1,5 @@
 import React from 'react'
+import ButtonBack from '../../components/ButtonBack/ButtonBack'
 import ProductCard from '../../components/ProductCard/ProductCard'
 import FuegoIPClipper from '../../images/clipper.png'
 
@@ -6,6 +7,7 @@ const SectionMedicinal = () => {
   return (
     <>
       <div className='section-container'>
+        <ButtonBack />
         <h1>MEDICINAL</h1>
         <div className='section_products'>
           <ProductCard

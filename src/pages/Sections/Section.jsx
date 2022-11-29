@@ -1,11 +1,13 @@
 import React from 'react'
 import ProductCard from '../../components/ProductCard/ProductCard'
 import FuegoIPClipper from '../../images/clipper.png'
+import ButtonBack from '../../components/ButtonBack/ButtonBack'
 
 const SectionFire = () => {
   return (
     <>
       <div className='section-container'>
+        <ButtonBack />
         <h1>FUEGO</h1>
         <div className='section_products'>
           <ProductCard
