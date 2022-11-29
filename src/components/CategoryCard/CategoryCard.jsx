@@ -1,6 +1,5 @@
 import React from 'react'
 import Button from '../Button/Button'
-import Button2 from '../Button2/Button2'
 
 const CategoryCard = ({cardImage, buttonTitle, buttonPath}) => {
   return (

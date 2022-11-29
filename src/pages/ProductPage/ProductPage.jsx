@@ -6,20 +6,50 @@ import thumbnail2 from '../../images/image-product-2-thumbnail.jpg'
 import thumbnail3 from '../../images/image-product-3-thumbnail.jpg'
 import thumbnail4 from '../../images/image-product-4-thumbnail.jpg'
 import iconClose from '../../images/icon-close.svg'
-import Slider from '../../components/Slider/Slider'
+import img1 from '../../images/image-product-1.jpg'
+import img2 from '../../images/image-product-2.jpg'
+import img3 from '../../images/image-product-3.jpg'
+import img4 from '../../images/image-product-4.jpg'
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/effect-flip";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import { EffectFlip, Pagination, Navigation } from "swiper";
 
 const ProductPage = () => {
-  
-  const mockImagenes = [
-		'https://picsum.photos/id/1020/400',
-		'https://picsum.photos/id/1025/400',
-		'https://picsum.photos/id/1010/400',
-	];
 
   return (
     <div className='ProductPage'>
       <section className='content'>
-        <Slider imagenes={mockImagenes} />
+        <div className='Slider-container'>
+          <Swiper
+            effect={"flip"}
+            grabCursor={true}
+            pagination={true}
+            navigation={true}
+            modules={[EffectFlip, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img src={img1} alt='' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img2} alt='' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img3} alt='' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img4} alt='' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={img3} alt='' />
+            </SwiperSlide>
+          </Swiper>
+        </div>
         <article className='details'>
           <h2 className='details_company'>CASA MARACACHAFA, Smoke & Grow</h2>
           <h2 className='details_title'>Clipper - Colección Flight</h2>

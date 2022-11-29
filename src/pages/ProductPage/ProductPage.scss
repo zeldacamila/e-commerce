@@ -1,6 +1,51 @@
 @use '../../variables';
 @use '../../mixins';
 
+.Slider-container {
+  padding-top: 20px;
+  @media (min-width:1125px) {
+    padding-top: 40px;
+  }
+}
+
+.swiper {
+  width: 350px;
+  height: 350px;
+  margin: 20px 0px 0px 0px ;
+  padding: 0px;
+  @media (min-width:1125px) {
+    width: 450px;
+    height: 450px;
+  }
+}
+:root {
+  --swiper-theme-color: #018A00 !important;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width:1125px) {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+.swiper-slide img {
+  object-fit: contain;
+  width: 350px;
+  height: 350px;
+  @media (min-width:1125px) {
+    width: 450px;
+    height: 450px;
+  }
+}
+
 .content{
   @media (min-width:1125px) {
     margin-top: 25px;
@@ -78,7 +123,7 @@
     color: variables.$Light-grayish-blue;
     line-height: 24px;
     margin-bottom: 24px;
-    text-align: center;
+    text-align: justify;
 }
 &_price{
     display: flex;

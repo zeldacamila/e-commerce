@@ -1,5 +1,4 @@
 import React from 'react'
-import ButtonProduct from '../ButtonProduct/ButtonProduct'
 
 const ProductCard = ({productImage, productTitle, productPath, productPrice}) => {
   return (
