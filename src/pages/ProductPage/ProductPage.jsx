@@ -62,7 +62,7 @@ const ProductPage = () => {
           </div>
         </article>
       </section>
-      {/* Inicio Gallery Modal */}
+{/*       {/* Inicio Gallery Modal */}
       <div className="modal-gallery_background">
         <article className='modal-gallery'>
           <div className="modal-gallery_close-container">
@@ -80,7 +80,7 @@ const ProductPage = () => {
           </div>
         </article>
       </div>
-      {/* Fin Gallery Modal */}
+      {/* Fin Gallery Modal */} */}
     </div>
   )
 }
