@@ -5,7 +5,7 @@ import { Button, Modal } from 'antd'
 import { useState } from 'react'
 import 'animate.css'
 import Cookies from 'universal-cookie'
-import logosPago from '../../images/pago-logos.png'
+import logosPago from '../../images/pago-logos2.png'
 import papelesCategory from '../../images/papeles.jpg'
 import vidriosCategory from '../../images/vidrios.jpg'
 import fuegoCategory from '../../images/fuego.png'
@@ -111,11 +111,19 @@ const Home = () => {
       
       {/* <h1 className='animate__animated animate__fadeInLeft'>VISITA NUESTRO BLOG</h1> */}
       <div className='InfoPago-container'>
-        <p>MEDIOS DE PAGO</p>
-        <div className='InfoPago-container_logos'>
-          <img className='logoInfoPago' src={logosPago} alt='' />
-       {/*    <img className='logoInfoPago' src={logoDV} alt=''/>
-          <img className='logoInfoPago' src={logoNQ} alt=''/> */}
+      <h1 className='animate__animated animate__fadeInLeft'>MEDIOS DE PAGO</h1>
+        
+        <div className="InfoPago-container-notitle">
+          <div className='InfoPago-container_logos'>
+            <img className='logoInfoPago' src={logosPago} alt='' />
+                 {/*    <img className='logoInfoPago' src={logoDV} alt=''/>
+            <img className='logoInfoPago' src={logoNQ} alt=''/> */}
+          </div>
+          <div className='InfoPago-container_details'>
+            <p className='infoAccounts'>3006728530</p>
+            <p className='infoAccounts'>3022711169</p>
+            <p className='infoAccounts'>Ahorros: 91968206503</p>
+          </div>
         </div>
       </div>
     </div>

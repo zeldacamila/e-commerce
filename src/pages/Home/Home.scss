@@ -35,7 +35,7 @@
   margin-top: 30px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   width: 400px;
   @media (min-width:1125px) {
     display: flex;
@@ -46,43 +46,103 @@
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     width: 100%;
   }
 }
 
 .InfoPago-container {
   width: 100%;
-  height: 300px;
+  height: 400px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  p{
-    color: rgb(207, 243, 95);
-    font-family: 'PiecesNfi', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    text-shadow:
-      0 0 7px rgb(0, 115, 0),
-      0 0 10px rgb(0, 115, 0),
-      0 0 21px rgb(0, 115, 0),
-      0 0 42px rgb(0, 115, 0),
-      0 0 82px rgb(0, 115, 0);
-    text-align: center;
+  padding-bottom: 60px;
+}
+.InfoPago-container-notitle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.InfoPago-container-notitle{
+  margin-top: 25px;
+  height: 160px;
+  width: 90%;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.632);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  @media (min-width: 1115px){
+    margin-top: 25px;
+    height: 200px;
+    width: 500px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.632);
+    display: flex;
+    align-items: center;
+    justify-content: left;
   }
+}
+.InfoPago-container_logos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 250px;
   .logoInfoPago {
     height: 90%;
     padding: 10px;
   }
-  &_logos{margin-top: 25px;
+  @media (min-width: 1115px){
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.632);
     height: 200px;
     width: 250px;
-    border-radius: 15px;
+    .logoInfoPago {
+      height: 90%;
+      padding: 10px;
+    }
+  }
+}
+.InfoPago-container_details{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: center;
+  gap: 15px;
+  height: 200px;
+  width: 250px;
+  padding-top: 25px;
+  padding-left: 5px;
+  .infoAccounts{
+  font-family: variables.$Font;
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+  }
+  @media (min-width: 1115px){
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    gap: 30px;
+    height: 200px;
+    width: 250px;
+    padding-top: 19px;
+    .infoAccounts{
+    font-family: variables.$Font;
+    font-size: 22px;
+    color: #000;
+    font-weight: 700;
+    }
   }
 }
