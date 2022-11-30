@@ -6,6 +6,11 @@
 }
 
 .Home-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   h1 {
     color: rgb(207, 243, 95);
     font-family: 'PiecesNfi', 'Arial Narrow', Arial, sans-serif;
@@ -28,9 +33,22 @@
   align-items: center;
   justify-content: center;
   margin-top: 30px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-bottom: 80px;
+  width: 350px;
+  @media (min-width:1125px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 80px;
+    width: 100%;
+  }
 }
 
 .InfoPago-container {

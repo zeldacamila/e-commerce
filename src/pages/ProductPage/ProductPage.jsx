@@ -80,7 +80,7 @@ const ProductPage = () => {
           </div>
         </article>
       </div>
-      {/* Fin Gallery Modal */} */}
+      {/* Fin Gallery Modal */}
     </div>
   )
 }
