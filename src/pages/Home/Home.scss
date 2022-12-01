@@ -23,6 +23,17 @@
   src: url(../../fonts/Flying-Slime-Reguler.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'HiltonLight';
+  src: url(../../fonts/Hilton-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Hilton';
+  src: url(../../fonts/Hilton.ttf) format('truetype');
+}
+
+
 .Home-container {
   display: flex;
   flex-direction: row;
@@ -30,13 +41,13 @@
   align-items: center;
   justify-content: center;
   h1 {
-    color: rgb(207, 243, 95);
-    font-family: 'Slime', 'Arial Narrow', Arial, sans-serif;
-    font-size: 60px;
+    color: rgb(242, 244, 237);
+    font-family: 'HiltonLight', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
     margin-top: 50px;
     text-align: center;
     text-shadow:
-    0 0 7px rgb(0, 115, 0),
+    0 0 7px rgb(207, 243, 95),
     0 0 10px rgb(0, 115, 0),
     0 0 21px rgb(0, 115, 0),
     0 0 42px rgb(0, 115, 0),
@@ -79,6 +90,20 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 60px;
+  .paymentMethods-title {
+    color: rgb(242, 244, 237);
+    font-family: 'HiltonLight', 'Arial Narrow', Arial, sans-serif;
+    font-size: 55px;
+    margin-top: 50px;
+    text-align: center;
+    text-shadow:
+    0 0 7px rgb(207, 243, 95),
+    0 0 10px rgb(0, 115, 0),
+    0 0 21px rgb(0, 115, 0),
+    0 0 42px rgb(0, 115, 0),
+    0 0 82px rgb(0, 115, 0),
+    0 0 60px rgb(0, 115, 0)
+  }
 }
 .InfoPago-container-notitle {
   display: flex;

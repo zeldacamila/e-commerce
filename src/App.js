@@ -13,6 +13,7 @@ import SectionKits from './pages/Sections/SectionKits';
 import SectionMedicinal from './pages/Sections/SectionMedicinal';
 import ProductPage from './pages/ProductPage/ProductPage';
 import ButtonWhatsapp from './components/ButtonWhatsapp/ButtonWhatsapp';
+import Logo from './pages/Logo/Logo';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path='/collections/Grow' element={<SectionGrow />} />
         <Route path='/collections/Medicinal' element={<SectionMedicinal />} />
         <Route path='/collections/Fire/products/Candela1' element={<ProductPage />} />
+        <Route path='/logo' element={<Logo />}/>
         <Route path='*' element={<NotFound />} />
       </Routes>
     </div>

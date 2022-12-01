@@ -5,11 +5,11 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.09);
   width: 150px;
   height: 185px;
   margin: 7px;
-  border: 1px solid rgb(1, 138, 0);
+/*   border: 1px solid rgb(1, 138, 0); */
   border-radius: 6px;
   box-shadow: rgba(1, 138, 0, 0.19) 0px 20px 30px, rgba(1, 138, 0, 0.23) 0px 20px 20px;
   .cardImg-container {
@@ -34,7 +34,7 @@
     width: 280px;
     height: 350px;
     margin: 15px;
-    border: 1px solid rgb(1, 138, 0);
+    /* border: 1px solid rgb(1, 138, 0); */
     border-radius: 6px;
     box-shadow: rgba(1, 138, 0, 0.19) 0px 20px 30px, rgba(1, 138, 0, 0.23) 0px 20px 20px;
     .cardImg-container {
