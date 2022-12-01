@@ -111,8 +111,7 @@ const Home = () => {
       
       {/* <h1 className='animate__animated animate__fadeInLeft'>VISITA NUESTRO BLOG</h1> */}
       <div className='InfoPago-container'>
-      <h1 className='animate__animated animate__fadeInLeft'>MEDIOS DE PAGO</h1>
-        
+      <h1 className='paymentMethods-title' >MEDIOS DE PAGO</h1>
         <div className="InfoPago-container-notitle">
           <div className='InfoPago-container_logos'>
             <img className='logoInfoPago' src={logosPago} alt='' />

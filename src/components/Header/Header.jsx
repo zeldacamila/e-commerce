@@ -1,4 +1,4 @@
-import logo from '../../images/LOGOlacasa3.png'
+import logo from '../../images/LOGOlacasa4.png'
 import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
