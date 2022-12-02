@@ -8,7 +8,7 @@ const SectionMedicinal = () => {
     <>
       <div className='section-container'>
         <ButtonBack />
-        <h1>MEDICINAL</h1>
+        <h1>Medicinal</h1>
         <div className='section_products'>
           <ProductCard
             productImage={FuegoIPClipper}

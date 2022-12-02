@@ -8,7 +8,7 @@ const SectionGrow = () => {
     <>
       <div className='section-container'>
         <ButtonBack />
-        <h1>GROW</h1>
+        <h1>Grow</h1>
         <div className='section_products'>
           <ProductCard
             productImage={FuegoIPClipper}
