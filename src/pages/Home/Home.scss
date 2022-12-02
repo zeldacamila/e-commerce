@@ -61,12 +61,13 @@
   justify-content: center;
   h1 {
     color: rgb(242, 244, 237);
-    font-family: 'HiltonLight', 'Arial Narrow', Arial, sans-serif;
-    font-size: 80px;
+    font-family: 'CallingHeart', sans-serif;
+    font-size: 60px;
     margin-top: 50px;
     text-align: center;
     text-shadow:
-/*     0 0 7px rgb(0, 115, 0), */
+    0 0 7px rgb(0, 0, 0),
+    0 0 8px rgb(0, 0, 0),
     0 0 10px rgb(0, 115, 0),
     0 0 21px rgb(0, 115, 0),
     0 0 42px rgb(0, 115, 0),

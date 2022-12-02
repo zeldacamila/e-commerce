@@ -69,7 +69,7 @@ const Home = () => {
     {/*   <div className='Brands-container'>
         <BrandsSlider />
       </div> */}
-      <h1 className='animate__animated animate__fadeInLeft'>PRODUCTOS</h1>
+      <h1 className='animate__animated animate__fadeInLeft'>🛸 MENU </h1>
 {/*       <h1 className='palace'>PRODUCTOS</h1>
       <h1 className='creamcake'>PRODUCTOS</h1>
       <h1 className='callingheart'>PRODUCTOS</h1>
@@ -89,7 +89,7 @@ const Home = () => {
           buttonPath='/collections/Fire' />
         <CategoryCard 
           cardImage={electroCategory}
-          buttonTitle='ELECTRONICOS'
+          buttonTitle='ELECTRÓNICOS'
           buttonPath='/collections/Electronics' />
         <CategoryCard 
           cardImage={papelesCategory}
