@@ -13,8 +13,7 @@ import SectionKits from './pages/Sections/SectionKits';
 import SectionMedicinal from './pages/Sections/SectionMedicinal';
 import ProductPage from './pages/ProductPage/ProductPage';
 import ButtonWhatsapp from './components/ButtonWhatsapp/ButtonWhatsapp';
-import Logo from './pages/Logo/Logo';
-import VisitUs from './components/VisitUs/VisitUs';
+import FollowUs from './components/FollowUs/FollowUs';
 
 function App() {
   return (
@@ -37,6 +36,7 @@ function App() {
         <Route path='/visitus' element={<VisitUs />}/> */}
         <Route path='*' element={<NotFound />} />
       </Routes>
+      <FollowUs />
     </div>
   );
 }
