@@ -70,6 +70,10 @@ const Home = () => {
         <BrandsSlider />
       </div> */}
       <h1 className='animate__animated animate__fadeInLeft'>PRODUCTOS</h1>
+      <h1 className='palace'>PRODUCTOS</h1>
+      <h1 className='creamcake'>PRODUCTOS</h1>
+      <h1 className='callingheart'>PRODUCTOS</h1>
+      <h1 className='billiondreams'>PRODUCTOS</h1>
       <div className='Cards-container'>
         <CategoryCard 
           cardImage={papelesCategory}
