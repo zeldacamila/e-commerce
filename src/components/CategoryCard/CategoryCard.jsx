@@ -4,6 +4,7 @@ import Button from '../Button/Button'
 const CategoryCard = ({cardImage, buttonTitle, buttonPath}) => {
   return (
     <div className='HomeCard-container'>
+      <a className='buttonPath' href={buttonPath} alt=''>
         <div className='cardImg-container'>
             <img src={cardImage} alt='' />
         </div>
@@ -12,6 +13,7 @@ const CategoryCard = ({cardImage, buttonTitle, buttonPath}) => {
           buttonTitle={buttonTitle}
           buttonPath={buttonPath} />
         </div>
+      </a> 
     </div>
   )
 }
