@@ -8,7 +8,7 @@ const SectionPaper = () => {
     <>
       <div className='section-container'>
         <ButtonBack />
-        <h1>PAPELES</h1>
+        <h1>Papeles</h1>
         <div className='section_products'>
           <ProductCard
             productImage={FuegoIPClipper}

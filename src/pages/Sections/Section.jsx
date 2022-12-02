@@ -8,7 +8,7 @@ const SectionFire = () => {
     <>
       <div className='section-container'>
         <ButtonBack />
-        <h1>FUEGO</h1>
+        <h1>Fuego</h1>
         <div className='section_products'>
           <ProductCard
             productImage={FuegoIPClipper}

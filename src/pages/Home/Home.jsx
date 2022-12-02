@@ -69,7 +69,7 @@ const Home = () => {
     {/*   <div className='Brands-container'>
         <BrandsSlider />
       </div> */}
-      <h1 className='animate__animated animate__fadeInLeft'>🛸 MENU </h1>
+      <h1 className='animate__animated animate__fadeInLeft'>🛸</h1>
 {/*       <h1 className='palace'>PRODUCTOS</h1>
       <h1 className='creamcake'>PRODUCTOS</h1>
       <h1 className='callingheart'>PRODUCTOS</h1>
@@ -115,7 +115,7 @@ const Home = () => {
       
       {/* <h1 className='animate__animated animate__fadeInLeft'>VISITA NUESTRO BLOG</h1> */}
       <div className='InfoPago-container'>
-      <h1 className='paymentMethods-title' >MEDIOS DE PAGO</h1>
+      <h1 className='paymentMethods-title' >💸 Medios de pago</h1>
         <div className="InfoPago-container-notitle">
           <div className='InfoPago-container_logos'>
             <img className='logoInfoPago' src={logosPago} alt='' />

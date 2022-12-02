@@ -5,10 +5,20 @@
   border: 0;
   border-radius: 5px;
   color: rgb(1, 138, 0);
+  z-index: 7;
+  text-shadow:
+    0 0 7px rgb(0, 0, 0),
+    0 0 8px rgb(0, 0, 0),
+    0 0 10px rgb(0, 115, 0),
+    0 0 21px rgb(0, 115, 0),
+    0 0 42px rgb(0, 115, 0),
+    0 0 82px rgb(0, 115, 0),
+    0 0 60px rgb(0, 115, 0);
   font-family: variables.$Font;
   font-size: 15px;
   font-weight: 700;
   margin: 5px;
+  margin-bottom: 5px;
   cursor: pointer;
   position: fixed;
   top: 115px;
