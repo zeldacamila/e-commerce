@@ -1,0 +1,50 @@
+.VisitUs-container{
+  .VisitUs-title {
+    color: rgb(242, 244, 237);
+    font-family: 'CallingHeart', sans-serif;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow:
+    0 0 7px rgb(0, 0, 0),
+    0 0 8px rgb(0, 0, 0),
+    0 0 10px rgb(0, 115, 0),
+    0 0 21px rgb(0, 115, 0),
+    0 0 42px rgb(0, 115, 0),
+    0 0 82px rgb(0, 115, 0),
+    0 0 60px rgb(0, 115, 0)
+  }
+}
+
+.VisitUsSlider-container {
+  padding-top: 10px;
+  @media (min-width:1125px) {
+    padding-top: 10px;
+  }
+}
+
+.VisitUsDetails-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  margin-top: 20px;
+  height: 150px;
+  gap: 5px;
+  width: 375;
+  padding-left: 15px;
+  padding-right: 5px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.73);
+  color:  rgb(242, 244, 237);
+  font-family: variables.$Font;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.VisitUsSlider-container{
+  margin: 0px;
+  padding: 0px;
+}

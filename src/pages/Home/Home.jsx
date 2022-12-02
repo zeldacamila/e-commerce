@@ -10,6 +10,7 @@ import papelesCategory from '../../images/papeles.jpg'
 import vidriosCategory from '../../images/vidrios.jpg'
 import fuegoCategory from '../../images/fuego.png'
 import electroCategory from '../../images/electronicos.jpg'
+import VisitUs from '../../components/VisitUs/VisitUs'
 
 const Home = () => {
 
@@ -66,11 +67,11 @@ const Home = () => {
       </Modal>)}   
       {/* <p className='advertising'>Envíos gratis por compras superiores a 200.000 COP</p> */}
       {/* <h1 className='animate__animated animate__fadeInLeft'>MARCAS ALIADAS</h1> */}
-    {/*   <div className='Brands-container'>
+      {/*   <div className='Brands-container'>
         <BrandsSlider />
       </div> */}
       <h1 className='animate__animated animate__fadeInLeft'>🛸</h1>
-{/*       <h1 className='palace'>PRODUCTOS</h1>
+      {/* <h1 className='palace'>PRODUCTOS</h1>
       <h1 className='creamcake'>PRODUCTOS</h1>
       <h1 className='callingheart'>PRODUCTOS</h1>
       <h1 className='billiondreams'>PRODUCTOS</h1> */}
@@ -113,21 +114,23 @@ const Home = () => {
           buttonPath='/collections/Medicinal' />
       </div>
       
+      <VisitUs />
+
       {/* <h1 className='animate__animated animate__fadeInLeft'>VISITA NUESTRO BLOG</h1> */}
       <div className='InfoPago-container'>
-      <h1 className='paymentMethods-title' >💸 Medios de pago</h1>
-        <div className="InfoPago-container-notitle">
-          <div className='InfoPago-container_logos'>
-            <img className='logoInfoPago' src={logosPago} alt='' />
-                 {/*    <img className='logoInfoPago' src={logoDV} alt=''/>
-            <img className='logoInfoPago' src={logoNQ} alt=''/> */}
-          </div>
-          <div className='InfoPago-container_details'>
+        <h1 className='paymentMethods-title' >💸 Medios de pago</h1>
+          <div className="InfoPago-container-notitle">
+            <div className='InfoPago-container_logos'>
+              <img className='logoInfoPago' src={logosPago} alt='' />
+                {/*<img className='logoInfoPago' src={logoDV} alt=''/>
+              <img className='logoInfoPago' src={logoNQ} alt=''/> */}
+            </div>
+            <div className='InfoPago-container_details'>
             <p className='infoAccounts'>3006728530</p>
             <p className='infoAccounts'>3022711169</p>
             <p className='infoAccounts'>Ahorros: 91968206503</p>
+            </div>
           </div>
-        </div>
       </div>
     </div>
   )

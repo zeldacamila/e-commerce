@@ -14,6 +14,7 @@ import SectionMedicinal from './pages/Sections/SectionMedicinal';
 import ProductPage from './pages/ProductPage/ProductPage';
 import ButtonWhatsapp from './components/ButtonWhatsapp/ButtonWhatsapp';
 import Logo from './pages/Logo/Logo';
+import VisitUs from './components/VisitUs/VisitUs';
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
         <Route path='/collections/Grow' element={<SectionGrow />} />
         <Route path='/collections/Medicinal' element={<SectionMedicinal />} />
         <Route path='/collections/Fire/products/Candela1' element={<ProductPage />} />
-        <Route path='/logo' element={<Logo />}/>
+{/*         <Route path='/logo' element={<Logo />}/>
+        <Route path='/visitus' element={<VisitUs />}/> */}
         <Route path='*' element={<NotFound />} />
       </Routes>
     </div>
