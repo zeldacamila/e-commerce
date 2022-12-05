@@ -1,4 +1,9 @@
 .VisitUs-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   .VisitUs-title {
     color: rgb(242, 244, 237);
     font-family: 'CallingHeart', sans-serif;
@@ -9,7 +14,10 @@
     text-shadow:
     0 0 7px rgb(0, 0, 0),
     0 0 8px rgb(0, 0, 0),
-    0 0 10px rgb(0, 115, 0),
+    0 0 9px rgb(0, 0, 0),
+    0 0 10px rgb(0, 0, 0),
+    0 0 11px rgb(0, 0, 0),
+    0 0 15px rgb(0, 115, 0),
     0 0 21px rgb(0, 115, 0),
     0 0 42px rgb(0, 115, 0),
     0 0 82px rgb(0, 115, 0),
@@ -23,7 +31,17 @@
     padding-top: 10px;
   }
 }
-
+.VisitUs-notitle-container{
+  @media (min-width:1125px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 1000px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
 .VisitUsDetails-container{
   display: flex;
   flex-direction: row;
@@ -33,15 +51,32 @@
   margin-top: 20px;
   height: 150px;
   gap: 5px;
-  width: 375;
+  width: 375px;
   padding-left: 15px;
   padding-right: 5px;
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.73);
+  background-color: rgba(0, 0, 0, 0.6);
   color:  rgb(242, 244, 237);
   font-family: variables.$Font;
   font-size: 21px;
   font-weight: 700;
+  @media (min-width:1125px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0px;
+    height: 200px;
+    gap: 15px;
+    width: 450px;
+    padding: 10px;
+    border-radius: 15px;
+    color:  rgb(242, 244, 237);
+    font-family: variables.$Font;
+    font-size: 26px;
+    font-weight: 700;
+  }
 }
 
 .VisitUsSlider-container{

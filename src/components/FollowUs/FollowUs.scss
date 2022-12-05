@@ -1,5 +1,10 @@
 .FollowUs-container{
   margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   .FollowUs-title {
     color: rgb(242, 244, 237);
     font-family: 'CallingHeart', sans-serif;
@@ -16,6 +21,28 @@
     0 0 82px rgb(0, 115, 0),
     0 0 60px rgb(0, 115, 0)
   }
+  @media (min-width:1125px) {
+    .FollowUs-title {
+      color: rgb(242, 244, 237);
+      font-family: 'CallingHeart', sans-serif;
+      font-size: 50px;
+      margin-top: 50px;
+      margin-bottom: 10px;
+      text-align: center;
+      text-shadow:
+      0 0 7px rgb(0, 0, 0),
+      0 0 8px rgb(0, 0, 0),
+      0 0 9px rgb(0, 0, 0),
+      0 0 10px rgb(0, 0, 0),
+      0 0 11px rgb(0, 0, 0),
+      0 0 15px rgb(0, 115, 0),
+      0 0 21px rgb(0, 115, 0),
+      0 0 42px rgb(0, 115, 0),
+      0 0 82px rgb(0, 115, 0),
+      0 0 60px rgb(0, 115, 0)
+    }
+    
+  }
 }
 
 .FollowUsDetails-container{
@@ -26,22 +53,39 @@
   justify-content: center;
   margin-top: 20px;
   height: 120px;
-  width: 375;
+  width: 375px;
   padding-left: 15px;
   padding-right: 5px;
   margin-bottom: 120px;
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.73);
+  background-color: rgba(0, 0, 0, 0.60);
   color:  rgb(242, 244, 237);
   font-family: variables.$Font;
   font-size: 21px;
-  font-weight: 700;  
+  font-weight: 700;
+  @media (min-width:1125px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    width: 1000px;
+    height: 140px;
+    margin-bottom: 120px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.73);
+    color:  rgb(242, 244, 237);
+    font-family: variables.$Font;
+    font-size: 26px;
+    font-weight: 700;
+  }
 }
 
 .FollowUsImgAndDetail-container{
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   text-decoration: none;
   color:  rgb(242, 244, 237);
   .FollowUsImg-container{
@@ -49,6 +93,20 @@
     img {
       height: 100%;
       object-fit: cover;
+    }
+  }
+  @media (min-width:1125px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:  rgb(242, 244, 237);
+    .FollowUsImg-container{
+      height: 80px;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }

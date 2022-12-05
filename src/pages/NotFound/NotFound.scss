@@ -9,13 +9,15 @@
   img {
     width: 75%;
     height: 75%;
+    background-color: rgba(0, 0, 0, 0.3);
   }
   #notFound {
     color: rgb(207, 243, 95);
     font-family: 'PiecesNfi', 'Arial Narrow', Arial, sans-serif;
     font-size: 45px;
-    margin-top: 5px;
+    margin-top: 20px;
     margin-bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
   }
   p {
     color: rgb(207, 243, 95);
@@ -23,6 +25,7 @@
     font-size: 20px;
     margin-top: 45px;
     margin-bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
   }
   @media(min-width: 1115px){
     #notFound {

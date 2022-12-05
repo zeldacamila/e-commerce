@@ -14,11 +14,13 @@ import SectionMedicinal from './pages/Sections/SectionMedicinal';
 import ProductPage from './pages/ProductPage/ProductPage';
 import ButtonWhatsapp from './components/ButtonWhatsapp/ButtonWhatsapp';
 import FollowUs from './components/FollowUs/FollowUs';
+import VisitUs from './components/VisitUs/VisitUs';
 
 function App() {
   return (
     <div className="main-container">
       <Header />
+      
       <ButtonWhatsapp />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -36,6 +38,7 @@ function App() {
         <Route path='/visitus' element={<VisitUs />}/> */}
         <Route path='*' element={<NotFound />} />
       </Routes>
+      <VisitUs />
       <FollowUs />
     </div>
   );
