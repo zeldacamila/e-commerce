@@ -10,7 +10,7 @@ import papelesCategory from '../../images/papeles.jpg'
 import vidriosCategory from '../../images/vidrios.jpg'
 import fuegoCategory from '../../images/fuego.png'
 import electroCategory from '../../images/electronicos.jpg'
-import VisitUs from '../../components/VisitUs/VisitUs'
+import Brands from '../../components/Brands/Brands';
 
 const Home = () => {
 
@@ -70,6 +70,7 @@ const Home = () => {
       {/*   <div className='Brands-container'>
         <BrandsSlider />
       </div> */}
+      <Brands />
       <h1 className='animate__animated animate__fadeInLeft'>🛸</h1>
       {/* <h1 className='palace'>PRODUCTOS</h1>
       <h1 className='creamcake'>PRODUCTOS</h1>
@@ -114,11 +115,10 @@ const Home = () => {
           buttonPath='/collections/Medicinal' />
       </div>
       
-      <VisitUs />
 
       {/* <h1 className='animate__animated animate__fadeInLeft'>VISITA NUESTRO BLOG</h1> */}
       <div className='InfoPago-container'>
-        <h1 className='paymentMethods-title' >💸 Medios de pago</h1>
+        <h1 className='paymentMethods-title' >💸Medios de pago</h1>
           <div className="InfoPago-container-notitle">
             <div className='InfoPago-container_logos'>
               <img className='logoInfoPago' src={logosPago} alt='' />

@@ -1,22 +1,15 @@
-@use '../../variables';
-
-@font-face {
-  font-family: 'PiecesNfi';
-  src: url(../../fonts/PiecesNfi-LrOn.ttf) format('truetype');
-}
-
-.section-container {
+.Brands-container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  h1 {
+  .Brands-title {
     color: rgb(242, 244, 237);
     font-family: 'CallingHeart', sans-serif;
-    font-size: 70px;
+    font-size: 50px;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-align: center;
     text-shadow:
     0 0 7px rgb(0, 0, 0),
@@ -32,25 +25,23 @@
   }
 }
 
-.section_products {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 80px;
-  width: 375px;
+.BrandsSlider-container {
+  padding-top: 10px;
+  margin: 0px;
+  padding: 0px;
+  @media (min-width:1125px) {
+    padding-top: 10px;
+  }
+}
+.Brands-notitle-container{
   @media (min-width:1125px) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 60px;
-    width: 100%;
+    justify-content: space-around;
+    width: 1000px;
+    background-color: rgba(0, 0, 0, 0.6);
   }
 }
+
