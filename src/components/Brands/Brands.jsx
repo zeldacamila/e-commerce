@@ -22,7 +22,7 @@ const Brands = () => {
         <h2 className='animate__animated animate__fadeInLeft'>🍁Marcas aliadas</h2>
         <div className='BrandsSlider-container-mobile'>
           <Swiper
-            slidesPerView={2}
+            slidesPerView={3}
             spaceBetween={10}
 /*             effect={"cube"} */
             grabCursor={true}
