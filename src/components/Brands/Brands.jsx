@@ -23,21 +23,17 @@ const Brands = () => {
         <div className='BrandsSlider-container-mobile'>
           <Swiper
             slidesPerView={3}
+            slidesPerGroupSkip={0}
+            slidesPerGroup={3}
             spaceBetween={10}
-/*             effect={"cube"} */
             grabCursor={true}
-/*             cubeEffect={{
-              shadow: false,
-              slideShadows: false,
-              shadowOffset: 20,
-              shadowScale: 0.94,
-            }} */
-/*             style="height:200px" */
             autoplay={true}
             modules={[ Autoplay]}
             className="mySwiper"
           >
-            <SwiperSlide ><img className='Brand-img' src={brand1} alt='' /></SwiperSlide>
+            <SwiperSlide ><img className='Brand-img1' src={brand1} alt='' /></SwiperSlide>
+            <SwiperSlide ><img className='Brand-img2' src={brand2} alt='' /></SwiperSlide>
+            <SwiperSlide ><img className='Brand-img3' src={brand3} alt='' /></SwiperSlide>
             <SwiperSlide ><img className='Brand-img' src={brand2} alt='' /></SwiperSlide>
             <SwiperSlide ><img className='Brand-img' src={brand3} alt='' /></SwiperSlide>
             <SwiperSlide ><img className='Brand-img' src={brand4} alt='' /></SwiperSlide>
