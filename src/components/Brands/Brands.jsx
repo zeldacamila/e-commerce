@@ -22,17 +22,19 @@ const Brands = () => {
         <h2 className='animate__animated animate__fadeInLeft'>🍁Marcas aliadas</h2>
         <div className='BrandsSlider-container-mobile'>
           <Swiper
-            effect={"cube"}
+            slidesPerView={2}
+            spaceBetween={10}
+/*             effect={"cube"} */
             grabCursor={true}
-            cubeEffect={{
+/*             cubeEffect={{
               shadow: false,
               slideShadows: false,
               shadowOffset: 20,
               shadowScale: 0.94,
-            }}
+            }} */
 /*             style="height:200px" */
             autoplay={true}
-            modules={[EffectCube, Autoplay]}
+            modules={[ Autoplay]}
             className="mySwiper"
           >
             <SwiperSlide ><img className='Brand-img' src={brand1} alt='' /></SwiperSlide>
