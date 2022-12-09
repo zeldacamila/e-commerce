@@ -1,30 +1,24 @@
 import React from 'react'
 import ButtonBack from '../../components/ButtonBack/ButtonBack'
 import ProductCard from '../../components/ProductCard/ProductCard'
-import FuegoIPClipper from '../../images/clipper.png'
+import data from '../../data'
 
 const SectionPaper = () => {
+  const {products_sectionPaper} = data
   return (
     <>
       <div className='section-container'>
         <ButtonBack />
         <h1>Papeles</h1>
         <div className='section_products'>
-          <ProductCard
-            productImage={FuegoIPClipper}
-            productTitle='Clipper - Collection Flight'
-            productPath='/collections/Fire/products/Candela1'
-            productPrice='4.500' />
-          <ProductCard
-            productImage={FuegoIPClipper}
-            productTitle='Clipper - Collection Flight'
-            productPath='/collections/Fire/products/Candela2'
-            productPrice='4.500' />
-          <ProductCard
-            productImage={FuegoIPClipper}
-            productTitle='Clipper - Collection Flight'
-            productPath='/collections/Fire/products/Candela3'
-            productPrice='4.500' />
+          {products_sectionPaper.map((product) => (
+            <ProductCard 
+              productImage={product.productImage}
+              productTitle={product.productTitle}
+              productPath={product.productPath}
+              productPrice={product.productPrice}
+            />
+          ))}
         </div>
       </div>
       
