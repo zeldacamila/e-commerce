@@ -8,12 +8,24 @@
   cursor: pointer;
 }
 
+.cart_logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 50%;
+  cursor: pointer;
+}
+.falsediv {
+  width: 100px;
+}
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   height: 110px;
   background-color: rgba(0, 0, 0, 0.541);
   border-bottom: 2px solid rgb(1, 138, 0);
   padding: 0 24px;
 }
+
+
