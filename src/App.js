@@ -15,6 +15,7 @@ import ProductPage from './pages/ProductPage/ProductPage';
 import ButtonWhatsapp from './components/ButtonWhatsapp/ButtonWhatsapp';
 import FollowUs from './components/FollowUs/FollowUs';
 import VisitUs from './components/VisitUs/VisitUs';
+import Cart from './pages/Cart/Cart';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path='/collections/:Collection/:Product' element={<ProductPage />} />
 {/*         <Route path='/logo' element={<Logo />}/>
         <Route path='/visitus' element={<VisitUs />}/> */}
+        <Route path='/cart' element={<Cart />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <VisitUs />

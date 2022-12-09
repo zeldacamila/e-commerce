@@ -1,15 +1,9 @@
 import React from 'react'
-import img1 from '../../images/image-product-1.jpg'
-import img2 from '../../images/image-product-2.jpg'
-import img3 from '../../images/image-product-3.jpg'
-import img4 from '../../images/image-product-4.jpg'
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import { EffectFlip, Pagination, Navigation } from "swiper";
 import ButtonBack from '../../components/ButtonBack/ButtonBack'
 import data2 from '../../data2'
@@ -17,13 +11,11 @@ import { useParams } from 'react-router-dom'
 
 const ProductPage = () => {
   const {allProducts} = data2
-
   let productPath = useParams();
   let productName = productPath.Product
 /*   console.log('productPath', productPath)
   console.log('productPath.Collection', productPath.Collection)
   console.log('productPath.Product', productPath.Product) */
-
   const product = allProducts.find((x) => x.productName === productName);
   console.log('product', product)
 
