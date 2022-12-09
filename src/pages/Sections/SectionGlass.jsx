@@ -4,14 +4,14 @@ import ProductCard from '../../components/ProductCard/ProductCard'
 import data from '../../data'
 
 const SectionGlass = () => {
-  const {products_sectionGlass} = data
+  const {GlassProducts} = data
   return (
     <>
       <div className='section-container'>
         <ButtonBack />
         <h1>Vidrios</h1>
         <div className='section_products'>
-          {products_sectionGlass.map((product) => (
+          {GlassProducts.map((product) => (
             <ProductCard 
               productImage={product.productImage}
               productTitle={product.productTitle}

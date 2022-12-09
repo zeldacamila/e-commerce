@@ -4,14 +4,14 @@ import ButtonBack from '../../components/ButtonBack/ButtonBack'
 import data from '../../data'
 
 const SectionApto = () => {
-  const {products_sectionApto} = data
+  const {AptoProducts} = data
   return (
     <>
       <div className='section-container'>
         <ButtonBack />
         <h1>Para tu apto</h1>
         <div className='section_products'>
-          {products_sectionApto.map((product) => (
+          {AptoProducts.map((product) => (
             <ProductCard 
               productImage={product.productImage}
               productTitle={product.productTitle}

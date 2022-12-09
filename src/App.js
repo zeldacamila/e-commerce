@@ -33,7 +33,7 @@ function App() {
         <Route path='/collections/Kits' element={<SectionKits />} />
         <Route path='/collections/Grow' element={<SectionGrow />} />
         <Route path='/collections/Medicinal' element={<SectionMedicinal />} />
-        <Route path='/collections/Fire/products/Candela1' element={<ProductPage />} />
+        <Route path='/collections/:Collection/:Product' element={<ProductPage />} />
 {/*         <Route path='/logo' element={<Logo />}/>
         <Route path='/visitus' element={<VisitUs />}/> */}
         <Route path='*' element={<NotFound />} />

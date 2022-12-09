@@ -4,14 +4,14 @@ import ProductCard from '../../components/ProductCard/ProductCard'
 import data from '../../data'
 
 const SectionMedicinal = () => {
-  const {products_sectionMedicinal} = data
+  const {MedicinalProducts} = data
   return (
     <>
       <div className='section-container'>
         <ButtonBack />
         <h1>Medicinal</h1>
         <div className='section_products'>
-          {products_sectionMedicinal.map((product) => (
+          {MedicinalProducts.map((product) => (
             <ProductCard 
               productImage={product.productImage}
               productTitle={product.productTitle}

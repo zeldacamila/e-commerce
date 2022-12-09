@@ -4,14 +4,14 @@ import ProductCard from '../../components/ProductCard/ProductCard'
 import data from '../../data'
 
 const SectionKits = () => {
-  const {products_sectionKits} = data
+  const {KitsProducts} = data
   return (
     <>
       <div className='section-container'>
         <ButtonBack />
         <h1>Kits</h1>
         <div className='section_products'>
-          {products_sectionKits.map((product) => (
+          {KitsProducts.map((product) => (
             <ProductCard 
               productImage={product.productImage}
               productTitle={product.productTitle}
