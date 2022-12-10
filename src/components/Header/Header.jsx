@@ -15,9 +15,13 @@ const Header = () => {
 
   return (
       <header className="header">
-        <div className='falsediv'></div>
-        <img className='header_logo' src={logo} alt ="logo" onClick={handleClickLogo}/>
-        <img className='cart_logo' src={cartImg} alt ='cartImg' onClick={handleClickCart} />
+        <div className='empty'></div>
+        <div className='logo-container'>
+          <img className='header_logo' src={logo} alt ="logo" onClick={handleClickLogo}/>
+        </div>
+        <div className='cartlogo-container'>
+          <img className='cart_logo' src={cartImg} alt ='cartImg' onClick={handleClickCart} />
+        </div>
       </header>
   )
 }

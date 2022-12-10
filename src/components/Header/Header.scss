@@ -1,31 +1,39 @@
 @use '../../variables';
 @use '../../mixins';
-
-.header_logo {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  height: 80%;
-  cursor: pointer;
+.logo-container{
+  width: 220px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  .header_logo {
+    width: 220px;
+    cursor: pointer;
+  }
 }
-
-.cart_logo {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  height: 50%;
-  cursor: pointer;
+.cartlogo-container{
+  width: 70px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 110px;
+  .cart_logo {
+    height: 35%;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
 }
-.falsediv {
-  width: 100px;
+.empty {
+  width: 70px;
+  height: 110px;
 }
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-between;
   height: 110px;
   background-color: rgba(0, 0, 0, 0.541);
   border-bottom: 2px solid rgb(1, 138, 0);
-  padding: 0 24px;
+  padding: 0 5px;
 }
 
 
