@@ -2,23 +2,25 @@ import React from 'react'
 import { useContext } from "react";
 import { CartContext } from "../../store/productContext";
 import data2 from '../../data2';
+import { message } from 'antd'
 
 const ProductCard = ({productImage, productTitle, productPath, productPrice}) => {
   const {allProducts} = data2
   const { addProduct } = useContext(CartContext)
 
-/*   const openMessage = () => {
+   const openMessage = () => {
     message.info({
       content: '¡Producto agregado!',
       duration: 3,
     })
-  } */
+  }
 
   const handleAddtoCart = () => {
     const product = allProducts.find((x) => x.productTitle === productTitle);
     console.log('product', product)
     console.log('productTitle', productTitle)
     addProduct(product)
+    openMessage()
     if (localStorage.getItem("ProductsCart") === null) {
       localStorage.setItem("ProductsCart",JSON.stringify([]))
     }
