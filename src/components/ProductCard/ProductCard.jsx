@@ -3,11 +3,12 @@ import { useContext } from "react";
 import { CartContext } from "../../store/productContext";
 import data2 from '../../data2';
 import { message } from 'antd'
+import cartImg2 from '../../images/cartLogo2.png'
 
 const ProductCard = ({productImage, productTitle, productPath, productPrice}) => {
   const {allProducts} = data2
   const { addProduct } = useContext(CartContext)
-
+  const { onAdd } = useContext(CartContext)
    const openMessage = () => {
     message.info({
       content: '¡Producto agregado!',
@@ -44,7 +45,7 @@ const ProductCard = ({productImage, productTitle, productPath, productPrice}) =>
           <p className='productPrice'>COP ${productPrice}</p>
         </div>
       </a> 
-      <button className='addtocart_button' onClick={handleAddtoCart} >Agregar al 🛒</button>
+      <button className='addtocart_button' onClick={handleAddtoCart} >Agregar a la <img className='bag_logo' src={cartImg2} alt='' /></button>
     </div>
   )
 }

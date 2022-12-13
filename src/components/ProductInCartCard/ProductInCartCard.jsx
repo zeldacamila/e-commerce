@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProductInCartCard = ({productImage, productTitle, productPrice}) => {
+const ProductInCartCard = ({productImage, productTitle, productPrice, productQuantity}) => {
 
   return (
     <div className='ProductInCartCard-container'>
@@ -9,6 +9,7 @@ const ProductInCartCard = ({productImage, productTitle, productPrice}) => {
       </div>
       <div className='productInCartCardInfo-container'>
         <p className='productInCartName'>{productTitle}</p>
+        <p className='productInCartQuantity'>{productQuantity}</p>
         <p className='productInCartPrice'>COP ${productPrice}</p>
       </div>
     </div>
