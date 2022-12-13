@@ -4,13 +4,20 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: wheat;
+  margin-bottom: 40px;
+/*   background-color: wheat; */
+  color: rgb(242, 244, 237);
   h1 {
     color: rgb(242, 244, 237);
     font-family: 'CallingHeart', sans-serif;
     font-size: 70px;
     margin-top: 50px;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
     text-align: center;
     text-shadow:
     0 0 7px rgb(0, 0, 0),
@@ -22,6 +29,30 @@
     0 0 21px rgb(0, 115, 0),
     0 0 42px rgb(0, 115, 0),
     0 0 82px rgb(0, 115, 0),
-    0 0 60px rgb(0, 115, 0)
   }
+}
+
+.baglogo {
+  width: 23%;
+  padding-right: 5px;
+}
+
+.buttonCart {
+  height: 35px;
+  background-color: rgb(207, 243, 95);
+  border: 0;
+  border-radius: 15px;
+  color:rgb(0, 88, 0);
+  font-family: variables.$Font;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.CheckoutCart-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px
 }

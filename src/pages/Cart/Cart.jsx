@@ -4,6 +4,7 @@ import { useContext } from 'react'
 import { CartContext } from '../../store/productContext'
 import { useNavigate } from 'react-router-dom'
 import ProductInCartCard from '../../components/ProductInCartCard/ProductInCartCard'
+import cartImg3 from '../../images/cartLogo3.png'
 
 const Cart = () => {
 
@@ -28,14 +29,14 @@ const Cart = () => {
   return (
     <div className='Cart-container'>
       <ButtonBack />
-      <h1>🛒Carrito</h1>
+      <h1><img className='baglogo' src={cartImg3} alt='' />Bolsa</h1>
       <div className='ProductsCart-container'>
         {productsCart ?
             (productsCart.map((product) => {
               amount = amount + product.productPrice
               console.log('amount', amount)
               return(
-              <ProductInCartCard productImage={product.productImage} productTitle={product.productTitle} productPrice={product.productPrice} />
+              <ProductInCartCard productImage={product.productImage} productQuantity={product.productQuantity} productTitle={product.productTitle} productPrice={product.productPrice} />
               )
             }))
               :
@@ -44,9 +45,9 @@ const Cart = () => {
         <h3>Total: COP ${amount}</h3>
       </div>
       <div className="CheckoutCart-container">
-        <button onClick={handleGoToShop} className='buttonCleanCart'>Seguir comprando</button>
-        <button onClick={handleClickCleanCart} className='buttonCleanCart'>Vaciar carrito</button>
-        <button onClick={() => alert('Implementar Pasarela de Pagos!')} className='buttonCleanCart'>Pagar</button>
+        <button onClick={handleGoToShop} className='buttonCart'>Seguir comprando</button>
+        <button onClick={handleClickCleanCart} className='buttonCart'>Vaciar bolsa</button>
+        <button onClick={() => alert('Implementar Pasarela de Pagos!')} className='buttonCart'>Pagar 💰</button>
       </div>
     </div>
   )
