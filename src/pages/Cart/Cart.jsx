@@ -9,7 +9,7 @@ import cartImg3 from '../../images/cartLogo3.png'
 const Cart = () => {
 
   const navigate = useNavigate()
-
+  const { emptyCart } = useContext(CartContext)
   const {productscart} = useContext(CartContext)
   console.log('productscart', productscart)
   const productsCart = JSON.parse(localStorage.getItem('ProductsCart'))
@@ -36,7 +36,7 @@ const Cart = () => {
               amount = amount + product.productPrice
               console.log('amount', amount)
               return(
-              <ProductInCartCard productImage={product.productImage} productQuantity={product.productQuantity} productTitle={product.productTitle} productPrice={product.productPrice} />
+              <ProductInCartCard productId = {product.productId} productImage={product.productImage} productQuantity={product.productQuantity} productTitle={product.productTitle} productPrice={product.productPrice} />
               )
             }))
               :

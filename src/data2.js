@@ -7,7 +7,9 @@ import img4 from './images/image-product-4.jpg'
 const data2 = {
   allProducts: [
     {
+      productId: 1,
       productName:'Candela1',
+      productQuantity: 1,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -20,7 +22,9 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 2,
       productName:'Candela2',
+      productQuantity: 1,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -33,7 +37,9 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 3,
       productName:'Candela3',
+      productQuantity: 1,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -46,7 +52,9 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 4,
       productImage:FuegoIPClipper,
+      productQuantity: 1,
       productImg2: img2,
       productImg3: img3,
       productImg4: img4,
@@ -58,7 +66,9 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 5,
       productImage:FuegoIPClipper,
+      productQuantity: 1,
       productImg2: img2,
       productImg3: img3,
       productImg4: img4,
@@ -70,7 +80,9 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 6,
       productImage:FuegoIPClipper,
+      productQuantity: 1,
       productImg2: img2,
       productImg3: img3,
       productImg4: img4,
@@ -82,7 +94,9 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 7,
       productImage:FuegoIPClipper,
+      productQuantity: 1,
       productImg2: img2,
       productImg3: img3,
       productImg4: img4,
@@ -94,6 +108,8 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 8,
+      productQuantity: 1,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -106,6 +122,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 9,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -118,6 +135,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 10,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -130,6 +148,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 11,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -142,6 +161,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 12,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -154,6 +174,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 13,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -166,6 +187,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 14,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -178,6 +200,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 15,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -190,6 +213,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 16,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -202,6 +226,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 17,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -214,6 +239,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 18,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -226,6 +252,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 19,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -238,6 +265,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 20,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -250,6 +278,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 21,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -262,6 +291,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 22,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -274,6 +304,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 23,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -286,6 +317,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 24,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -298,6 +330,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 25,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -310,6 +343,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 26,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,
@@ -322,6 +356,7 @@ const data2 = {
       productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
     {
+      productId: 27,
       productImage:FuegoIPClipper,
       productImg2: img2,
       productImg3: img3,

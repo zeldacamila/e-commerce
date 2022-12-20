@@ -17,6 +17,7 @@ const SectionKits = () => {
               productTitle={product.productTitle}
               productPath={product.productPath}
               productPrice={product.productPrice}
+              productQuantity={product.productQuantity}
             />
           ))}
         </div>

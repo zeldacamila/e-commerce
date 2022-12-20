@@ -12,10 +12,12 @@ const SectionFire = () => {
         <div className='section_products'>
           {FireProducts.map((product) => (
           <ProductCard 
+            productId={product.productId}
             productImage={product.productImage}
             productTitle={product.productTitle}
             productPath={product.productPath}
             productPrice={product.productPrice}
+            productQuantity={product.productQuantity}
           />
           ))}
         </div>
