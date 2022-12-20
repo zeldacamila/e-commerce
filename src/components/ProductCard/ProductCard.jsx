@@ -5,8 +5,8 @@ import data2 from '../../data2';
 import { message } from 'antd'
 import cartImg2 from '../../images/cartLogo2.png'
 
-const ProductCard = ({productImage, productTitle, productPath, productPrice}) => {
-  const {allProducts} = data2
+const ProductCard = ({productImage, productId, productTitle, productPath, productPrice, productQuantity}) => {
+  const { allProducts } = data2
   const { addProduct } = useContext(CartContext)
   const { onAdd } = useContext(CartContext)
    const openMessage = () => {
@@ -17,21 +17,26 @@ const ProductCard = ({productImage, productTitle, productPath, productPrice}) =>
   }
 
   const handleAddtoCart = () => {
-    const product = allProducts.find((x) => x.productTitle === productTitle);
-    console.log('product', product)
-    console.log('productTitle', productTitle)
+    const product = allProducts.find((x) => x.productId === productId);
     addProduct(product)
     openMessage()
     if (localStorage.getItem("ProductsCart") === null) {
       localStorage.setItem("ProductsCart",JSON.stringify([]))
     }
-    localStorage.setItem('products', product)
     let products = [localStorage.getItem("ProductsCart")]
     products = JSON.parse(products)
-      const objProduct = {productImage,productPrice,productTitle}
-      console.log('objProduct',objProduct)
-      products.push(objProduct)
-      localStorage.setItem("ProductsCart",JSON.stringify(products));
+    let objProduct = {productImage,productPrice,productTitle,productQuantity,productId}
+    const productExist = products.find((x) => x.productId === objProduct.productId)
+    if (productExist) {
+      const productToPush = products.map((x) =>
+        x.productId === objProduct.productId ? { ...productExist, productQuantity: productExist.productQuantity + 1 } : x
+      )
+      products = productToPush
+    } else {
+      const productToPush = {...objProduct, productQuantity:1 }
+      products.push(productToPush)
+    }  
+    localStorage.setItem("ProductsCart",JSON.stringify(products));
   }
   
   return (
