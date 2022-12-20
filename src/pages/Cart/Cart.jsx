@@ -42,12 +42,14 @@ const Cart = () => {
               :
             <p>No has agregado productos al carrito</p>
         }
-        <h3>Total: COP ${amount}</h3>
+        <h3 >Total: COP ${amount}</h3>
       </div>
       <div className="CheckoutCart-container">
-        <button onClick={handleGoToShop} className='buttonCart'>Seguir comprando</button>
-        <button onClick={handleClickCleanCart} className='buttonCart'>Vaciar bolsa</button>
-        <button onClick={() => alert('Implementar Pasarela de Pagos!')} className='buttonCart'>Pagar 💰</button>
+        <div className="CheckoutCartWithoutbuttoncart-container">
+          <button onClick={handleGoToShop} className='buttonCart1'>Seguir comprando</button>
+          <button onClick={handleClickCleanCart} className='buttonCart2'>Vaciar bolsa</button>
+        </div>
+        <button onClick={() => alert('Implementar Pasarela de Pagos!')} className='buttonCart3'>Pagar 💰</button>
       </div>
     </div>
   )
