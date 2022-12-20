@@ -33,7 +33,7 @@ const Cart = () => {
       <div className='ProductsCart-container'>
         {productsCart ?
             (productsCart.map((product) => {
-              amount = amount + product.productPrice
+              amount = amount + (product.productQuantity*product.productPrice)
               console.log('amount', amount)
               return(
               <ProductInCartCard productId = {product.productId} productImage={product.productImage} productQuantity={product.productQuantity} productTitle={product.productTitle} productPrice={product.productPrice} />
