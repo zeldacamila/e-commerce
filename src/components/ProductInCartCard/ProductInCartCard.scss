@@ -18,11 +18,42 @@
     height: 150px;
     padding-right: 10px;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    color: rgb(236, 236, 236);
+  }
+  .productInCartCardInfoQuantity-container {
+    width: 200px;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+    gap:10px;
     color: rgb(236, 236, 236);
+    .productInCartQuantity {
+      width: 30px;
+      text-align: center;
+    }
+    .buttonHandlePlus {
+      display: block;
+      width: 20px;
+      border: 1px solid #7db34f;
+      border-radius: 3px;
+      background-color: #7db34f;
+      font-size: 16px;
+    }
+    .buttonHandleDelete {
+      display: block;
+      width: 20px;
+      border: 1px solid #7db34f;
+      border-radius: 3px;
+      background-color: #7db34f;
+      font-size: 16px;
+    }
   }
   .productInCartCardImg-container {
     width: 130px;

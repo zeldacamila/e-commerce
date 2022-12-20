@@ -31,6 +31,28 @@ const ProductInCartCard = ({productImage, productId, productTitle, productPrice,
     localStorage.setItem("ProductsCart",JSON.stringify(productsInLocal));
     navigate('/cart')
   }
+  const handlePlus = () => {
+    console.log('plus ')
+    let productsInLocal = [localStorage.getItem("ProductsCart")]
+    productsInLocal = JSON.parse(productsInLocal)
+    console.log('products', productsInLocal)
+    const exist = productsInLocal.find((x) => x.productId === productId);
+      console.log('exist', exist)
+
+/*     if (exist.productQuantity === 1) {
+      const productsagain = productsInLocal.filter((x) => x.productId !== productId);
+      console.log(productsagain)
+      productsInLocal = productsagain
+    } else { */
+      const productsagain = productsInLocal.map((x) =>
+        x.productId === productId ? { ...exist, productQuantity: exist.productQuantity + 1 } : x
+      )
+      console.log(productsagain)  
+      productsInLocal = productsagain
+    
+    localStorage.setItem("ProductsCart",JSON.stringify(productsInLocal));
+    navigate('/cart')
+  }
   return (
     <div className='ProductInCartCard-container'>
       <div className='productInCartCardImg-container'>
@@ -38,11 +60,12 @@ const ProductInCartCard = ({productImage, productId, productTitle, productPrice,
       </div>
       <div className='productInCartCardInfo-container'>
         <p className='productInCartName'>{productTitle}</p>
-        <p className='productInCartQuantity'>Cantidad:{productQuantity}</p>
-        <button onClick={handleDelete}>X</button>
-{/*         <button onClick={handlePlus}>+</button>
-        <button onClick={handleMinus}>-</button> */}
         <p className='productInCartPrice'>COP ${productPrice}</p>
+        <div className='productInCartCardInfoQuantity-container'>
+          <button className='buttonHandleDelete' onClick={handleDelete}>-</button>
+          <p className='productInCartQuantity'>{productQuantity}</p>
+          <button className='buttonHandlePlus' onClick={handlePlus}>+</button>
+        </div>
       </div>
     </div>
   )
