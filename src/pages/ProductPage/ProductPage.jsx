@@ -52,7 +52,7 @@ const ProductPage = () => {
           <h2 className='details_title'>{product.productTitle}</h2>
           <p className='details_description'>{product.productDetails}</p>
           <div className="details_price">
-            <p className="details_now">COP ${product.productPrice} {product.productDiscount !== 'null' ? <span className='details_discount'>%{product.productDiscount}</span> : <div></div>}{/* <span className='details_discount'>%{product.productDiscount}</span> */}</p>
+            <p className="details_now">COP ${product.productPrice} {product.productDiscount !== null ? <span className='details_discount'>%{product.productDiscount}</span> : <div></div>}{/* <span className='details_discount'>%{product.productDiscount}</span> */}</p>
             {product.productPriceBefore !== null ? <p className="details_before">COP ${product.productPriceBefore} </p> : <div></div>}
             {/* <p className="details_before">COP ${product.productPriceBefore} </p> */}
           </div>
