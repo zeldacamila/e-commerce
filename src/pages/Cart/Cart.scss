@@ -1,3 +1,17 @@
+.productCounter {
+  color: black;
+  font-size: 10px;
+  text-shadow:
+    0 0 7px rgb(0, 0, 0),
+    0 0 8px rgb(0, 0, 0),
+    0 0 9px rgb(0, 0, 0),
+    0 0 10px rgb(0, 0, 0),
+    0 0 11px rgb(0, 0, 0),
+    0 0 15px rgb(0, 115, 0),
+    0 0 21px rgb(0, 115, 0),
+    0 0 42px rgb(0, 115, 0),
+    0 0 82px rgb(0, 115, 0),
+}
 .Cart-container {
   display: flex;
   flex-direction: row;

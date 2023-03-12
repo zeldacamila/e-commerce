@@ -9,12 +9,11 @@ import cartImg3 from '../../images/cartLogo3.png'
 const Cart = () => {
 
   const navigate = useNavigate()
-  const { emptyCart } = useContext(CartContext)
   const {productscart} = useContext(CartContext)
   console.log('productscart', productscart)
   const productsCart = JSON.parse(localStorage.getItem('ProductsCart'))
-  console.log('productsCart', productsCart)
-
+  const productCounter = productsCart.length;
+  console.log('productscart', productCounter)
   const handleClickCleanCart = () => {
     localStorage.removeItem('ProductsCart')
     navigate('/cart')
@@ -36,11 +35,16 @@ const Cart = () => {
               amount = amount + (product.productQuantity*product.productPrice)
               console.log('amount', amount)
               return(
-              <ProductInCartCard productId = {product.productId} productImage={product.productImage} productQuantity={product.productQuantity} productTitle={product.productTitle} productPrice={product.productPrice} />
+              <ProductInCartCard 
+                productId = {product.productId}
+                productImage={product.productImage}
+                productQuantity={product.productQuantity}
+                productTitle={product.productTitle}
+                productPrice={product.productPrice} />
               )
             }))
               :
-            <p>No has agregado productos al carrito</p>
+            <p>No has agregado productos a la bolsa</p>
         }
         <h3 >Total: COP ${amount}</h3>
       </div>

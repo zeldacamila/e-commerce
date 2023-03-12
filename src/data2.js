@@ -3,6 +3,10 @@ import img1 from './images/image-product-1.jpg'
 import img2 from './images/image-product-2.jpg'
 import img3 from './images/image-product-3.jpg'
 import img4 from './images/image-product-4.jpg'
+import MiniSoplete from './images/products-images/soplete_pequeño.jpg'
+import MiniSopleteNegro from './images/products-images/soplete_pequeño_negro2.jpg'
+import MiniSopleteNaranja from './images/products-images/soplete_pequeño_naranja.jpg'
+import MiniSopleteVerde from './images/products-images/soplete_pequeño_verde.jpg'
 
 const data2 = {
   allProducts: [
@@ -38,46 +42,48 @@ const data2 = {
     },
     {
       productId: 3,
-      productName:'Candela3',
+      productName:'MiniSopleteVerde',
       productQuantity: 1,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Flight3',
-      productPath:'/collections/FireProducts/Candela3',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
+      productImage:MiniSopleteVerde,
+      productImg2: MiniSoplete,
+      productImg3: null,
+      productImg4: null,
+      productTitle:'Mini soplete verde Floppi',
+      productPath:'/collections/FireProducts/MiniSopleteVerde',
+      productPrice: 12000,
+      productPriceBefore: null,
+      productDiscount: null,
+      productDetails:'Mini soplete encendedor marca Floppi. Potencia de la llama regulable. Sistema de seguridad antiencendido. Tamaño: 8cm x 5cm'
     },
     {
       productId: 4,
-      productImage:FuegoIPClipper,
+      productName:'MiniSopleteNaranja',
       productQuantity: 1,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Apto1',
-      productPath:'/collections/AptoProducts/Candela1',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
+      productImage:MiniSopleteNaranja,
+      productImg2: MiniSoplete,
+      productImg3: null,
+      productImg4: null,
+      productTitle:'Mini soplete naranja Floppi',
+      productPath:'/collections/AptoProducts/MiniSopleteNaranja',
+      productPrice: 12000,
+      productPriceBefore: null,
+      productDiscount: null,
+      productDetails:'Mini soplete encendedor marca Floppi. Potencia de la llama regulable. Sistema de seguridad antiencendido. Tamaño: 8cm x 5cm'
     },
     {
       productId: 5,
-      productImage:FuegoIPClipper,
+      productName:'MiniSopleteNegro',
+      productImage:MiniSopleteNegro,
       productQuantity: 1,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Apto2',
-      productPath:'/collections/AptoProducts/Candela2',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
+      productImg2: MiniSoplete,
+      productImg3: null,
+      productImg4: null,
+      productTitle:'Mini soplete negro Floppi',
+      productPath:'/collections/FireProducts/MiniSopleteNegro',
+      productPrice: 12000,
+      productPriceBefore: null,
+      productDiscount: null,
+      productDetails:'Mini soplete encendedor marca Floppi. Potencia de la llama regulable. Sistema de seguridad antiencendido. Tamaño: 8cm x 5cm'
     },
     {
       productId: 6,
