@@ -7,6 +7,12 @@ import MiniSoplete from './images/products-images/soplete_pequeño.jpg'
 import MiniSopleteNegro from './images/products-images/soplete_pequeño_negro2.jpg'
 import MiniSopleteNaranja from './images/products-images/soplete_pequeño_naranja.jpg'
 import MiniSopleteVerde from './images/products-images/soplete_pequeño_verde.jpg'
+import BongRickExtraccion from './images/products-images/bong_rick_extraccion.jpg'
+import BongRickExtraccion2 from './images/products-images/bong_rick_extraccion2.jpg'
+import BongDengke from './images/products-images/bong_dengke.jpg'
+import BongDengke2 from './images/products-images/bong_dengke2.jpg'
+import BongDengkeCalaveras from './images/products-images/bong_dengke_calaveras.jpg'
+import BongDengkeCalaveras2 from './images/products-images/bong_dengke_calaveras2.jpg'
 
 const data2 = {
   allProducts: [
@@ -73,8 +79,8 @@ const data2 = {
     {
       productId: 5,
       productName:'MiniSopleteNegro',
-      productImage:MiniSopleteNegro,
       productQuantity: 1,
+      productImage:MiniSopleteNegro,
       productImg2: MiniSoplete,
       productImg3: null,
       productImg4: null,
@@ -86,46 +92,49 @@ const data2 = {
       productDetails:'Mini soplete encendedor marca Floppi. Potencia de la llama regulable. Sistema de seguridad antiencendido. Tamaño: 8cm x 5cm'
     },
     {
-      productId: 6,
-      productImage:FuegoIPClipper,
+      productId: 13,
+      productName:'BongRickExtraccion',
       productQuantity: 1,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Apto3',
-      productPath:'/collections/AptoProducts/Candela3',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
+      productImage:BongRickExtraccion2,
+      productImg2: BongRickExtraccion,
+      productImg3: null,
+      productImg4: null,
+      productTitle:'Bong para extracción Rick y Snuffles',
+      productPath:'/collections/GlassProducts/BongRickExtraccion',
+      productPrice: 200000,
+      productPriceBefore: null,
+      productDiscount: null,
+      productDetails:'Bong en porcelana con uña para extracción, colección Rick and Morty'
     },
     {
-      productId: 7,
-      productImage:FuegoIPClipper,
+      productId: 14,
+      productName:'BongDengke',
       productQuantity: 1,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Dabs1',
-      productPath:'/collections/DabsProducts/Candela1',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
+      productImage:BongDengke,
+      productImg2: BongDengke2,
+      productImg3: null,
+      productImg4: null,
+      productTitle:'Bong DENGKE para flor y extracción',
+      productPath:'/collections/GlassProducts/BongDengke',
+      productPrice: 110000,
+      productPriceBefore: null,
+      productDiscount: null,
+      productDetails:'Bong de vidrio marca Dengke. Este producto viene sin boquilla metálica y sin banger'
     },
     {
-      productId: 8,
+      productId: 15,
+      productName:'BongDengkeCalaveras',
       productQuantity: 1,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Dabs2',
-      productPath:'/collections/DabsProducts/Candela2',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
+      productImage:BongDengkeCalaveras,
+      productImg2: BongDengkeCalaveras2,
+      productImg3: null,
+      productImg4: null,
+      productTitle:'Bong DENGKE para flor con grabado de calaveras',
+      productPath:'/collections/GlassProducts/BongDengkeCalaveras',
+      productPrice: 115000,
+      productPriceBefore: null,
+      productDiscount: null,
+      productDetails:'Bong de vidrio marca Dengke para flor, con grabado de calaveras'
     },
     {
       productId: 9,
