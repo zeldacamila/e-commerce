@@ -35,18 +35,16 @@ const ProductPage = () => {
             <SwiperSlide>
               <img src={product.productImage} alt='' />
             </SwiperSlide>
-            <SwiperSlide>
+            {product.productImg2 !== null ? <SwiperSlide>
               <img src={product.productImg2} alt='' />
-            </SwiperSlide>
-            <SwiperSlide>
+            </SwiperSlide> : <div></div>}
+            
+            {product.productImg3 !== null ? <SwiperSlide>
               <img src={product.productImg3} alt='' />
-            </SwiperSlide>
-            <SwiperSlide>
+            </SwiperSlide> : <div></div>}
+            {product.productImg4 !== null ? <SwiperSlide>
               <img src={product.productImg4} alt='' />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={product.productImage} alt='' />
-            </SwiperSlide>
+            </SwiperSlide> : <div></div>}
           </Swiper>
         </div>
         <article className='details'>
@@ -54,8 +52,9 @@ const ProductPage = () => {
           <h2 className='details_title'>{product.productTitle}</h2>
           <p className='details_description'>{product.productDetails}</p>
           <div className="details_price">
-            <p className="details_now">COP ${product.productPrice} <span className='details_discount'>%{product.productDiscount}</span></p>
-            <p className="details_before">COP ${product.productPriceBefore} </p>
+            <p className="details_now">COP ${product.productPrice} {product.productDiscount !== 'null' ? <span className='details_discount'>%{product.productDiscount}</span> : <div></div>}{/* <span className='details_discount'>%{product.productDiscount}</span> */}</p>
+            {product.productPriceBefore !== null ? <p className="details_before">COP ${product.productPriceBefore} </p> : <div></div>}
+            {/* <p className="details_before">COP ${product.productPriceBefore} </p> */}
           </div>
         </article>
       </section>

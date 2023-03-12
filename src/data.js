@@ -1,4 +1,8 @@
 import FuegoIPClipper from './images/clipper.png'
+import MiniSoplete from './images/products-images/soplete_pequeño.jpg'
+import MiniSopleteNegro from './images/products-images/soplete_pequeño_negro2.jpg'
+import MiniSopleteNaranja from './images/products-images/soplete_pequeño_naranja.jpg'
+import MiniSopleteVerde from './images/products-images/soplete_pequeño_verde.jpg'
 
 const data = {
   FireProducts: [
@@ -22,13 +26,31 @@ const data = {
     },
     {
       productId: 3,
-      productImage:FuegoIPClipper,
-      productTitle:'Clipper - Collection Flight',
-      productPath:'/collections/FireProducts/Candela3',
-      productPrice:4500,
+      productImage:MiniSopleteVerde,
+      productTitle:'Mini soplete verde Floppi',
+      productPath:'/collections/FireProducts/MiniSopleteVerde',
+      productPrice:12000,
       productQuantity: 1,
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
+      productDetails:'Mini soplete encendedor marca Floppi. Potencia de la llama regulable. Sistema de seguridad antiencendido. Tamaño: 8cm x 5cm'
     },
+    {
+      productId: 4,
+      productImage:MiniSopleteNaranja,
+      productTitle:'Mini soplete naranja Floppi',
+      productPath:'/collections/FireProducts/MiniSopleteNaranja',
+      productPrice:12000,
+      productQuantity: 1,
+      productDetails:'Mini soplete encendedor marca Floppi. Potencia de la llama regulable. Sistema de seguridad antiencendido. Tamaño: 8cm x 5cm'
+    },
+    {
+      productId: 5,
+      productImage:MiniSopleteNegro,
+      productTitle:'Mini soplete negro Floppi',
+      productPath:'/collections/FireProducts/MiniSopleteNegro',
+      productPrice:12000,
+      productQuantity: 1,
+      productDetails:'Mini soplete encendedor marca Floppi. Potencia de la llama regulable. Sistema de seguridad antiencendido. Tamaño: 8cm x 5cm'
+    }
   ],
   AptoProducts: [
     {

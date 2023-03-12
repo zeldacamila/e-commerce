@@ -5,7 +5,7 @@ const FollowUs = () => {
     <div className='FollowUs-container'>
       <h1 className='FollowUs-title'>👽Conecta con nosotros</h1>
         <div className="FollowUsDetails-container">
-          <a className="FollowUsImgAndDetail-container" href='https://www.instagram.com/casamaracachafasmokegrow/'>
+          <a className="FollowUsImgAndDetail-container" target="_blank" rel="nofollow noreferrer" href='https://www.instagram.com/casamaracachafasmokegrow/'>
             <div className="FollowUsImg-container">
               <img src={logoIG} alt=''/>
             </div>

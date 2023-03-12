@@ -15,12 +15,13 @@ const ProductInCartCard = ({productImage, productId, productTitle, productPrice,
     productsInLocal = JSON.parse(productsInLocal)
     console.log('products', productsInLocal)
     const exist = productsInLocal.find((x) => x.productId === productId);
-      console.log('exist', exist)
+    console.log('exist', exist)
 
     if (exist.productQuantity === 1) {
       const productsagain = productsInLocal.filter((x) => x.productId !== productId);
       console.log(productsagain)
       productsInLocal = productsagain
+
     } else {
       const productsagain = productsInLocal.map((x) =>
         x.productId === productId ? { ...exist, productQuantity: exist.productQuantity - 1 } : x
