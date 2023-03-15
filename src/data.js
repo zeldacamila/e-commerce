@@ -1,11 +1,17 @@
 import FuegoIPClipper from './images/clipper.png'
-import MiniSoplete from './images/products-images/soplete_pequeño.jpg'
 import MiniSopleteNegro from './images/products-images/soplete_pequeño_negro2.jpg'
 import MiniSopleteNaranja from './images/products-images/soplete_pequeño_naranja.jpg'
 import MiniSopleteVerde from './images/products-images/soplete_pequeño_verde.jpg'
 import BongRickExtraccion from './images/products-images/bong_rick_extraccion2.jpg'
 import BongDengke from './images/products-images/miniatura_bong_dengke.jpg'
 import BongDengkeCalaveras from './images/products-images/miniatura_bong_dengke_calaveras.jpg'
+import BongEyceVerde from './images/products-images/miniatura_bong_eyce.jpg'
+import BongDengkeCalavera from './images/products-images/miniatura_bong_dengke_calavera.jpg'
+import BongBulldogGin from './images/products-images/bong_bulldogGin.jpg'
+import PipaFelix from './images/products-images/miniatura_pipa_felixelgato.jpg'
+import PipaCono from './images/products-images/miniatura_pipa_conohelado.jpg'
+import PipaColores from './images/products-images/miniatura_pipa_colores.jpg'
+
 const data = {
   FireProducts: [
     {
@@ -157,10 +163,53 @@ const data = {
       productPrice: 115000,
       productDetails: 'Bong de vidrio marca Dengke para flor, con grabado de calaveras'
     },
+    {
+      productId: 16,
+      productImage: BongEyceVerde,
+      productTitle: 'Bong Eyce siliconado verde',
+      productPath: '/collections/GlassProducts/BongEyceVerde',
+      productPrice: 250000,
+      productDetails: 'Bong de vidrio marca Eyce tipo beaker siliconado'
+    },
+    { productId: 17,
+      productImage: BongDengkeCalavera,
+      productTitle: 'Bong D&K para flor, calavera azul',
+      productPath: '/collections/GlassProducts/BongDengkeCalavera',
+      productPrice: 115000,
+      productDetails: 'Bong de vidrio marca Dengke, en forma de calavera azul'
+    },
+    { productId: 18,
+      productImage: BongBulldogGin,
+      productTitle: 'Bong Bulldog Gin para flor',
+      productPath: '/collections/GlassProducts/BongBulldogGin',
+      productPrice: 110000,
+      productDetails: 'Bong de vidrio en forma de botella de ginebra Bulldog'
+    },
+    { productId: 19,
+      productImage: PipaFelix,
+      productTitle: 'Pipa de silicona y vidrio Félix El Gato',
+      productPath: '/collections/GlassProducts/PipaFelix',
+      productPrice: 28000,
+      productDetails: 'Pipa en silicona con diseño de Félix El Gato, pequeña con bowl o tazón en vidrio, fácil de limpiar y duradera.'
+    },
+    { productId: 20,
+      productImage: PipaCono,
+      productTitle: 'Pipa de silicona y vidrio Icecream',
+      productPath: '/collections/GlassProducts/PipaCono',
+      productPrice: 28000,
+      productDetails: 'Pipa en silicona con diseño de cono de helado, pequeña con bowl o tazón en vidrio, fácil de limpiar y duradera.'
+    },
+    { productId: 21,
+      productImage: PipaColores,
+      productTitle: 'Pipa de silicona y vidrio Colores',
+      productPath: '/collections/GlassProducts/PipaColores',
+      productPrice: 25000,
+      productDetails: 'Pipa en silicona con colores variados, pequeña con bowl o tazón en vidrio, fácil de limpiar y duradera.'
+    }
   ],
   GrowProducts: [
     {
-      productId: 16,
+      productId: 166,
       productImage:FuegoIPClipper,
       productTitle:'Clipper - Collection Grow',
       productPath:'/collections/GrowProducts/Candela1',
