@@ -1,5 +1,4 @@
 import FuegoIPClipper from './images/clipper.png'
-import img1 from './images/image-product-1.jpg'
 import img2 from './images/image-product-2.jpg'
 import img3 from './images/image-product-3.jpg'
 import img4 from './images/image-product-4.jpg'
@@ -13,6 +12,18 @@ import BongDengke from './images/products-images/bong_dengke.jpg'
 import BongDengke2 from './images/products-images/bong_dengke2.jpg'
 import BongDengkeCalaveras from './images/products-images/bong_dengke_calaveras.jpg'
 import BongDengkeCalaveras2 from './images/products-images/bong_dengke_calaveras2.jpg'
+import BongEyceVerde from './images/products-images/miniatura_bong_eyce.jpg'
+import BongEyceVerde2 from './images/products-images/bong_eyce.jpg'
+import BongEyceVerde3 from './images/products-images/bong_eyce2.jpg'
+import BongEyceVerde4 from './images/products-images/bong_eyce_dimensiones.jpg'
+import BongDengkeCalavera from './images/products-images/bong_dengke_calavera.jpg'
+import BongDengkeCalavera2 from './images/products-images/bong_dengke_calavera2.jpg'
+import BongBulldogGin from './images/products-images/bong_bulldogGin.jpg'
+import BongBulldogGin2 from './images/products-images/bong_bulldogGin2.jpg'
+import PipaFelix from './images/products-images/miniatura_pipa_felixelgato.jpg'
+import PipasSilicona from './images/products-images/pipas_silicona_vidrio.jpg'
+import PipaCono from './images/products-images/miniatura_pipa_conohelado.jpg'
+import PipaColores from './images/products-images/miniatura_pipa_colores.jpg'
 
 const data2 = {
   allProducts: [
@@ -137,69 +148,94 @@ const data2 = {
       productDetails:'Bong de vidrio marca Dengke para flor, con grabado de calaveras'
     },
     {
-      productId: 9,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Dabs3',
-      productPath:'/collections/DabsProducts/Candela3',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
+      productId: 16,
+      productName:'BongEyceVerde',
+      productQuantity: 1,
+      productImage:BongEyceVerde,
+      productImg2: BongEyceVerde2,
+      productImg3: BongEyceVerde3,
+      productImg4: BongEyceVerde4,
+      productTitle:'Bong Eyce tipo beaker siliconado verde',
+      productPath:'/collections/GlassProducts/BongEyce',
+      productPrice: 250000,
+      productPriceBefore: null,
+      productDiscount: null,
+      productDetails:'Bong de vidrio marca Eyce tipo beaker siliconado.'
     },
     {
-      productId: 10,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Electronics1',
-      productPath:'/collections/ElectronicsProducts/Candela1',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
+      productId: 17,
+      productName:'BongDengkeCalavera',
+      productQuantity: 1,
+      productImage:BongDengkeCalavera,
+      productImg2: BongDengkeCalavera2,
+      productImg3: null,
+      productImg4: null,
+      productTitle:'Bong D&K para flor, calavera azul',
+      productPath:'/collections/GlassProducts/BongDengkeCalavera',
+      productPrice: 115000,
+      productPriceBefore: null,
+      productDiscount: null,
+      productDetails:'Bong de vidrio marca Dengke, en forma de calavera azul'
     },
     {
-      productId: 11,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Electronics2',
-      productPath:'/collections/ElectronicsProducts/Candela2',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
+      productId: 18,
+      productName: 'BongBulldogGin',
+      productQuantity: 1,
+      productImage: BongBulldogGin,
+      productImg2: BongBulldogGin2,
+      productImg3: null,
+      productImg4: null,
+      productTitle:'Bong Bulldog Gin para flor',
+      productPath:'/collections/GlassProducts/BongBulldogGin',
+      productPrice: 110000,
+      productPriceBefore: null,
+      productDiscount: null,
+      productDetails:'Bong de vidrio en forma de botella de ginebra Bulldog.'
     },
     {
-      productId: 12,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Electronics3',
-      productPath:'/collections/ElectronicsProducts/Candela3',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
+      productId: 19,
+      productName: 'PipaFelix',
+      productQuantity: 1,
+      productImage:PipaFelix,
+      productImg2: PipasSilicona,
+      productImg3: null,
+      productImg4: null,
+      productTitle:'Pipa Félix El Gato',
+      productPath:'/collections/GlassProducts/PipaFelix',
+      productPrice: 28000,
+      productPriceBefore: null,
+      productDiscount: null,
+      productDetails:'Pipa de silicona con bowl en vidrio, diseño de Félix El Gato'
     },
     {
-      productId: 13,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Glass1',
-      productPath:'/collections/GlassProducts/Candela1',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
+      productId: 20,
+      productName: 'PipaCono',
+      productQuantity: 1,
+      productImage:PipaCono,
+      productImg2: PipasSilicona,
+      productImg3: null,
+      productImg4: null,
+      productTitle:'Pipa Cono de helado',
+      productPath:'/collections/GlassProducts/PipaCono',
+      productPrice: 28000,
+      productPriceBefore: null,
+      productDiscount: null,
+      productDetails:'Pipa de silicona con bowl en vidrio, diseño de cono de helado'
+    },
+    {
+      productId: 21,
+      productName: 'PipaColores',
+      productQuantity: 1,
+      productImage: PipaColores,
+      productImg2: PipasSilicona,
+      productImg3: null,
+      productImg4: null,
+      productTitle:'Pipa Cono de helado',
+      productPath:'/collections/GlassProducts/PipaColores',
+      productPrice: 25000,
+      productPriceBefore: null,
+      productDiscount: null,
+      productDetails:'Pipa en silicona con colores variados, pequeña con bowl o tazón en vidrio, fácil de limpiar y duradera.'
     },
     {
       productId: 14,
