@@ -12,7 +12,8 @@ const SectionDabs = () => {
         <h1>Dabs</h1>
         <div className='section_products'>
           {DabsProducts.map((product) => (
-            <ProductCard 
+            <ProductCard
+              productId={product.productId} 
               productImage={product.productImage}
               productTitle={product.productTitle}
               productPath={product.productPath}

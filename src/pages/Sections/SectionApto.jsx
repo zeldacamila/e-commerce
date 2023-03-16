@@ -12,7 +12,8 @@ const SectionApto = () => {
         <h1>Para tu apto</h1>
         <div className='section_products'>
           {AptoProducts.map((product) => (
-            <ProductCard 
+            <ProductCard
+              productId={product.productId} 
               productImage={product.productImage}
               productTitle={product.productTitle}
               productPath={product.productPath}
