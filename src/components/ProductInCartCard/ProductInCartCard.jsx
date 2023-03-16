@@ -21,7 +21,6 @@ const ProductInCartCard = ({productImage, productId, productTitle, productPrice,
       const productsagain = productsInLocal.filter((x) => x.productId !== productId);
       console.log(productsagain)
       productsInLocal = productsagain
-
     } else {
       const productsagain = productsInLocal.map((x) =>
         x.productId === productId ? { ...exist, productQuantity: exist.productQuantity - 1 } : x

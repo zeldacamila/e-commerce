@@ -13,6 +13,7 @@ const SectionGrow = () => {
         <div className='section_products'>
           {GrowProducts.map((product) => (
             <ProductCard 
+              productId={product.productId}
               productImage={product.productImage}
               productTitle={product.productTitle}
               productPath={product.productPath}

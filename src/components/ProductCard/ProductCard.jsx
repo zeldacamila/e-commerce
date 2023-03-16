@@ -1,14 +1,14 @@
-import React from 'react'/* 
+import React from 'react' 
 import { useContext } from "react";
-import { CartContext } from "../../store/productContext"; */
-/* import data2 from '../../data2'; */
+import { CartContext } from "../../store/productContext";
+import data2 from '../../data2';
 import { message } from 'antd'
 import cartImg2 from '../../images/cartLogo2.png'
 
 const ProductCard = ({productImage, productId, productTitle, productPath, productPrice, productQuantity}) => {
-/*   const { allProducts } = data2 */
-/*   const { addProduct } = useContext(CartContext) */
-/*   const { onAdd } = useContext(CartContext) */
+   const { allProducts } = data2 
+   const { addProduct } = useContext(CartContext) 
+   const { onAdd } = useContext(CartContext) 
    const openMessage = () => {
     message.info({
       content: '¡Producto agregado!',
@@ -16,14 +16,15 @@ const ProductCard = ({productImage, productId, productTitle, productPath, produc
     })
   }
 
-  const handleAddtoCart = () => {/* 
-    const product = allProducts.find((x) => x.productId === productId); */
-/*     addProduct(product) */
+  const handleAddtoCart = () => { 
+    const product = allProducts.find((x) => x.productId === productId);
+    addProduct(product)
     openMessage()
     if (localStorage.getItem("ProductsCart") === null) {
       localStorage.setItem("ProductsCart",JSON.stringify([]))
     }
     let products = [localStorage.getItem("ProductsCart")]
+    console.log('products', products)
     products = JSON.parse(products)
     let objProduct = {productImage,productPrice,productTitle,productQuantity,productId}
     const productExist = products.find((x) => x.productId === objProduct.productId)

@@ -17,7 +17,7 @@ const ProductPage = () => {
   console.log('productPath.Collection', productPath.Collection)
   console.log('productPath.Product', productPath.Product) */
   const product = allProducts.find((x) => x.productName === productName);
-  console.log('product', product)
+  /* console.log('product', product) */
 
   return (
     <div className='ProductPage'>

@@ -13,6 +13,7 @@ const SectionPaper = () => {
         <div className='section_products'>
           {PaperProducts.map((product) => (
             <ProductCard 
+              productId={product.productId}
               productImage={product.productImage}
               productTitle={product.productTitle}
               productPath={product.productPath}

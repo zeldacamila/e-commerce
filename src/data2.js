@@ -24,6 +24,11 @@ import PipaFelix from './images/products-images/miniatura_pipa_felixelgato.jpg'
 import PipasSilicona from './images/products-images/pipas_silicona_vidrio.jpg'
 import PipaCono from './images/products-images/miniatura_pipa_conohelado.jpg'
 import PipaColores from './images/products-images/miniatura_pipa_colores.jpg'
+import PowerHitterMorado from './images/products-images/miniatura_powerhitter_morado.jpg'
+import PowerHitterVerde from './images/products-images/miniatura_powerhitter_verde.jpg'
+import PowerHitter2 from './images/products-images/powerhitter_dimensiones.jpg'
+import PowerHitter3 from './images/products-images/powerhitter_desarmado.jpg'
+import PowerHitter4 from './images/products-images/powerhitter_instrucciones.jpg'
 
 const data2 = {
   allProducts: [
@@ -103,7 +108,37 @@ const data2 = {
       productDetails:'Mini soplete encendedor marca Floppi. Potencia de la llama regulable. Sistema de seguridad antiencendido. Tamaño: 8cm x 5cm'
     },
     {
-      productId: 13,
+      productId: 6,
+      productName: 'PowerHitterMorado',
+      productQuantity: 1,
+      productImage: PowerHitterMorado,
+      productImg2: PowerHitter2,
+      productImg3: PowerHitter3,
+      productImg4: PowerHitter4,
+      productTitle:'Colector de humo ThePowerHitterCo morado',
+      productPath:'/collections/AptoProducts/PowerHitterMorado',
+      productPrice: 40000,
+      productPriceBefore: null,
+      productDiscount: null,
+      productDetails:'Colector de humo clásico morado, marca ThePowerHitterCo'
+    },
+    {
+      productId: 7,
+      productName: 'PowerHitterVerde',
+      productQuantity: 1,
+      productImage: PowerHitterVerde,
+      productImg2: PowerHitter2,
+      productImg3: PowerHitter3,
+      productImg4: PowerHitter4,
+      productTitle:'Colector de humo ThePowerHitterCo verde',
+      productPath:'/collections/AptoProducts/PowerHitterVerde',
+      productPrice: 40000,
+      productPriceBefore: null,
+      productDiscount: null,
+      productDetails:'Colector de humo clásico verde, marca ThePowerHitterCo'
+    },
+    {
+      productId: 8,
       productName:'BongRickExtraccion',
       productQuantity: 1,
       productImage:BongRickExtraccion2,
@@ -118,7 +153,7 @@ const data2 = {
       productDetails:'Bong en porcelana con uña para extracción, colección Rick and Morty'
     },
     {
-      productId: 14,
+      productId: 9,
       productName:'BongDengke',
       productQuantity: 1,
       productImage:BongDengke,
@@ -133,7 +168,7 @@ const data2 = {
       productDetails:'Bong de vidrio marca Dengke. Este producto viene sin boquilla metálica y sin banger'
     },
     {
-      productId: 15,
+      productId: 10,
       productName:'BongDengkeCalaveras',
       productQuantity: 1,
       productImage:BongDengkeCalaveras,
@@ -148,7 +183,7 @@ const data2 = {
       productDetails:'Bong de vidrio marca Dengke para flor, con grabado de calaveras'
     },
     {
-      productId: 16,
+      productId: 11,
       productName:'BongEyceVerde',
       productQuantity: 1,
       productImage:BongEyceVerde,
@@ -163,7 +198,7 @@ const data2 = {
       productDetails:'Bong de vidrio marca Eyce tipo beaker siliconado.'
     },
     {
-      productId: 17,
+      productId: 12,
       productName:'BongDengkeCalavera',
       productQuantity: 1,
       productImage:BongDengkeCalavera,
@@ -178,7 +213,7 @@ const data2 = {
       productDetails:'Bong de vidrio marca Dengke, en forma de calavera azul'
     },
     {
-      productId: 18,
+      productId: 13,
       productName: 'BongBulldogGin',
       productQuantity: 1,
       productImage: BongBulldogGin,
@@ -193,7 +228,7 @@ const data2 = {
       productDetails:'Bong de vidrio en forma de botella de ginebra Bulldog.'
     },
     {
-      productId: 19,
+      productId: 14,
       productName: 'PipaFelix',
       productQuantity: 1,
       productImage:PipaFelix,
@@ -208,7 +243,7 @@ const data2 = {
       productDetails:'Pipa de silicona con bowl en vidrio, diseño de Félix El Gato'
     },
     {
-      productId: 20,
+      productId: 15,
       productName: 'PipaCono',
       productQuantity: 1,
       productImage:PipaCono,
@@ -223,7 +258,7 @@ const data2 = {
       productDetails:'Pipa de silicona con bowl en vidrio, diseño de cono de helado'
     },
     {
-      productId: 21,
+      productId: 16,
       productName: 'PipaColores',
       productQuantity: 1,
       productImage: PipaColores,
@@ -236,188 +271,6 @@ const data2 = {
       productPriceBefore: null,
       productDiscount: null,
       productDetails:'Pipa en silicona con colores variados, pequeña con bowl o tazón en vidrio, fácil de limpiar y duradera.'
-    },
-    {
-      productId: 14,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Glass2',
-      productPath:'/collections/GlassProducts/Candela2',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
-    },
-    {
-      productId: 15,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Glass3',
-      productPath:'/collections/GlassProducts/Candela3',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
-    },
-    {
-      productId: 16,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Grow1',
-      productPath:'/collections/GrowProducts/Candela1',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
-    },
-    {
-      productId: 17,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Grow2',
-      productPath:'/collections/GrowProducts/Candela2',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
-    },
-    {
-      productId: 18,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Grow3',
-      productPath:'/collections/GrowProducts/Candela3',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
-    },
-    {
-      productId: 19,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Kits1',
-      productPath:'/collections/KitsProducts/Candela1',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
-    },
-    {
-      productId: 20,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Kits2',
-      productPath:'/collections/KitsProducts/Candela2',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
-    },
-    {
-      productId: 21,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Kits3',
-      productPath:'/collections/KitsProducts/Candela3',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
-    },
-    {
-      productId: 22,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Medicinal1',
-      productPath:'/collections/MedicinalProducts/Candela1',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
-    },
-    {
-      productId: 23,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Medicinal2',
-      productPath:'/collections/MedicinalProducts/Candela2',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
-    },
-    {
-      productId: 24,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Medicinal3',
-      productPath:'/collections/MedicinalProducts/Candela3',
-      productPrice: 4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
-    },
-    {
-      productId: 25,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Paper',
-      productPath:'/collections/PaperProducts/Candela1',
-      productPrice:4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
-    },
-    {
-      productId: 26,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Paper2',
-      productPath:'/collections/PaperProducts/Candela2',
-      productPrice:4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
-    },
-    {
-      productId: 27,
-      productImage:FuegoIPClipper,
-      productImg2: img2,
-      productImg3: img3,
-      productImg4: img4,
-      productTitle:'Clipper - Collection Paper3',
-      productPath:'/collections/PaperProducts/Candela3',
-      productPrice:4500,
-      productPriceBefore: '6.000',
-      productDiscount: '25',
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
     },
   ],
 
