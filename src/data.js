@@ -13,6 +13,8 @@ import PipaCono from './images/products-images/miniatura_pipa_conohelado.jpg'
 import PipaColores from './images/products-images/miniatura_pipa_colores.jpg'
 import PowerHitterMorado from './images/products-images/miniatura_powerhitter_morado.jpg'
 import PowerHitterVerde from './images/products-images/miniatura_powerhitter_verde.jpg'
+import BateriaAirisII from './images/products-images/miniatura_bateria_airis_mystica2.jpg'
+import BateriaLeafBuddi from './images/products-images/miniatura_bateria_leafbuddiTH420.jpg'
 
 const data = {
   FireProducts: [
@@ -83,6 +85,22 @@ const data = {
   DabsProducts: [
   ],
   ElectronicsProducts: [
+    {
+      productId: 17,
+      productImage: BateriaAirisII,
+      productTitle:'Batería para vapeo AIRIS Mystica II',
+      productPath:'/collections/ElectronicsProducts/BateriaAirisII',
+      productPrice: 100000,
+      productDetails:'Mystica II de Airistech es un vaporizador para concentrados. Cuenta con acople magnético que se adapta a cualquier cartucho para mayor comodidad, además tiene una ventana para que puedas ver la cantidad de concentrado disponible. Tiene 3 voltajes diferentes para ajustar de acuerdo al concentrado que quieras vaporizar, estos 3 voltajes se encuentran diferenciados por colores: Verde 3.4V, Azul 3.7V y Rojo 4.0V para mejorar tu experiencia de vaporización.'
+    },
+    {
+      productId: 18,
+      productImage: BateriaLeafBuddi,
+      productTitle:'Batería para vapeo LEAF BUDDI TH-420',
+      productPath:'/collections/ElectronicsProducts/BateriaLeafBuddiTH420',
+      productPrice: 100000,
+      productDetails:'El TH-420 de Leaf Buddi tiene un diseño único y especial y cuenta con voltaje de trabajo ajustable: 3.4V-3.7V-4.0V. La luz de diferentes colores indica la carga actual de la batería. Este dispositivo tiene una hermosa superficie lisa que descansa cómodamente en su mano a la vez que es muy pequeño y de tamaño conveniente. El cartucho se inserta de forma inteligente y se bloquea en la caja mediante un conector magnético.'
+    },
   ],
   GlassProducts: [
     {
@@ -91,7 +109,7 @@ const data = {
       productTitle:'Bong para extracción Rick y Snuffles',
       productPath:'/collections/GlassProducts/BongRickExtraccion',
       productPrice: 200000,
-      productDetails:'Los encendedores Clipper son los mas conocidos gracias a sus creativos diseños y su excelente calidad, son duraderos y lo mejor es que con estos encendedores puedes recargar su gas cuando este se acabe, prolongando así la vida útil de los encendedores. También cuentan con válvulas de seguridad patentada para evitar explosiones.'
+      productDetails:'Bong en porcelana con uña para extracción, colección Rick and Morty'
     },
     {
       productId: 9,

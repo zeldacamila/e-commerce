@@ -8,7 +8,6 @@ import cartImg2 from '../../images/cartLogo2.png'
 const ProductCard = ({productImage, productId, productTitle, productPath, productPrice, productQuantity}) => {
    const { allProducts } = data2 
    const { addProduct } = useContext(CartContext) 
-   const { onAdd } = useContext(CartContext) 
    const openMessage = () => {
     message.info({
       content: '¡Producto agregado!',
