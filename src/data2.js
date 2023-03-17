@@ -35,7 +35,16 @@ import BateriaLeafBuddi from './images/products-images/miniatura_bateria_leafbud
 import BateriaLeafBuddi2 from './images/products-images/bateria_leafbuddiTH420.jpg'
 import BateriaLeafBuddi3 from './images/products-images/bateria_leafbuddiTH4202.jpg'
 import BateriaLeafBuddi4 from './images/products-images/bateria_leafbuddiTH4203.jpg'
+import BateriaYocanUNI from './images/products-images/miniatura_bateria_yocan_UNI.jpg'
+import BateriaYocanUNI2 from './images/products-images/bateria_yocan_UNI.jpg'
+import BateriaYocanUNI3 from './images/products-images/bateria_yocan_UNI2.jpg'
+import BateriaYocanUNI4 from './images/products-images/bateria_yocan_UNI3.jpg'
+import VapoAirisDabble from './images/products-images/miniatura_vaporizador_airis_dabble.jpg'
+import VapoAirisDabble2 from './images/products-images/vaporizador_airis_dabble.jpg'
+import VapoAirisDabble3 from './images/products-images/vaporizador_airis_dabble2.jpg'
+import RascadorElectricoSD from './images/products-images/miniatura_rascador_electrico_snoopDog.jpg'
 
+import HighHemp6PaperCones from './images/products-images/papercones6_highhemp.jpg'
 
 const data2 = {
   allProducts: [
@@ -309,6 +318,66 @@ const data2 = {
       productDiscount: null,
       productDetails:'El TH-420 de Leaf Buddi tiene un diseño único y especial y cuenta con voltaje de trabajo ajustable: 3.4V-3.7V-4.0V. La luz de diferentes colores indica la carga actual de la batería. Este dispositivo tiene una hermosa superficie lisa que descansa cómodamente en su mano a la vez que es muy pequeño y de tamaño conveniente. El cartucho se inserta de forma inteligente y se bloquea en la caja mediante un conector magnético.'
     },
+    {
+      productId: 19,
+      productName: 'BateriaYocanUNI',
+      productQuantity: 1,
+      productImage: BateriaYocanUNI,
+      productImg2: BateriaYocanUNI2,
+      productImg3: BateriaYocanUNI3,
+      productImg4: BateriaYocanUNI4,
+      productTitle: 'Batería para vapeo Yocan UNI',
+      productPath: '/collections/ElectronicsProducts/BateriaYocanUNI',
+      productPrice: 100000,
+      productPriceBefore: null,
+      productDiscount: null,
+      productDetails: 'Echa un vistazo al YoCan UNI Universal Portable Mod, que implementa un puerto de cartucho ajustable, 3 niveles de salida de voltaje y cuenta con una función de precalentamiento innovadora para lograr caladas suaves.'
+    },
+    {
+      productId: 20,
+      productName: 'VapoAirisDabble',
+      productQuantity: 1,
+      productImage: VapoAirisDabble,
+      productImg2: VapoAirisDabble2,
+      productImg3: VapoAirisDabble3,
+      productImg4: null,
+      productTitle: 'Vaporizador de dab Airis Dabble',
+      productPath: '/collections/ElectronicsProducts/VapoAirisDabble',
+      productPrice: 100000,
+      productPriceBefore: null,
+      productDiscount: null,
+      productDetails: 'Vaporizador de dab de doble uso Airis Dabble portátil. Compatible con bong de vidrio, dispone de un  modo de calentamiento automático de manos libres. Airis Dabble es para usar con cera, y dispone de una batería de 900mAh con gran capacidad y voltajes variables, así mismo, tiene función de precalentamiento y se carga mediante Micro USB.'
+    },
+    {
+      productId: 21,
+      productName: 'RascadorElectricoSD',
+      productQuantity: 1,
+      productImage: RascadorElectricoSD,
+      productImg2: null,
+      productImg3: null,
+      productImg4: null,
+      productTitle: 'Rascador eléctrico Snoop Dog',
+      productPath: '/collections/ElectronicsProducts/RascadorElectricoSD',
+      productPrice: 90000,
+      productPriceBefore: null,
+      productDiscount: null,
+      productDetails: 'Rascador eléctrico Snoop Dog'
+    },/* 
+    {
+      productId: 19,
+      productName: 'HighHemp6PaperCones',
+      productQuantity: 1,
+      productImage: HighHemp6PaperCones,
+      productImg2: null,
+      productImg3: null,
+      productImg4: null,
+      productTitle:'Conos de papel x6 High Hemp',
+      productPath:'/collections/PaperProducts/HighHemp6PaperCones',
+      productPrice: 15000,
+      productPriceBefore: null,
+      productDiscount: null,
+      productDetails:'Conos de papel x6 marca High Hemp.'
+    }, */
   ],
 
 };

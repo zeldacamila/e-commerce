@@ -15,6 +15,12 @@ import PowerHitterMorado from './images/products-images/miniatura_powerhitter_mo
 import PowerHitterVerde from './images/products-images/miniatura_powerhitter_verde.jpg'
 import BateriaAirisII from './images/products-images/miniatura_bateria_airis_mystica2.jpg'
 import BateriaLeafBuddi from './images/products-images/miniatura_bateria_leafbuddiTH420.jpg'
+import BateriaYocanUNI from './images/products-images/miniatura_bateria_yocan_UNI.jpg'
+import VapoAirisDabble from './images/products-images/miniatura_vaporizador_airis_dabble.jpg'
+import RascadorElectricoSD from './images/products-images/miniatura_rascador_electrico_snoopDog.jpg'
+
+import HighHemp6PaperCones from './images/products-images/papercones6_highhemp.jpg'
+
 
 const data = {
   FireProducts: [
@@ -101,6 +107,31 @@ const data = {
       productPrice: 100000,
       productDetails:'El TH-420 de Leaf Buddi tiene un diseño único y especial y cuenta con voltaje de trabajo ajustable: 3.4V-3.7V-4.0V. La luz de diferentes colores indica la carga actual de la batería. Este dispositivo tiene una hermosa superficie lisa que descansa cómodamente en su mano a la vez que es muy pequeño y de tamaño conveniente. El cartucho se inserta de forma inteligente y se bloquea en la caja mediante un conector magnético.'
     },
+    {
+      productId: 19,
+      productImage: BateriaYocanUNI,
+      productTitle:'Batería para vapeo Yocan UNI',
+      productPath:'/collections/ElectronicsProducts/BateriaYocanUNI',
+      productPrice: 100000,
+      productDetails:'Echa un vistazo al YoCan UNI Universal Portable Mod, que implementa un puerto de cartucho ajustable, 3 niveles de salida de voltaje y cuenta con una función de precalentamiento innovadora para lograr caladas suaves.'
+    },
+    {
+      productId: 20,
+      productImage: VapoAirisDabble,
+      productTitle:'Vaporizador de dab Airis Dabble',
+      productPath:'/collections/ElectronicsProducts/VapoAirisDabble',
+      productPrice: 100000,
+      productDetails:'Vaporizador de dab de doble uso Airis Dabble portátil. Compatible con bong de vidrio, dispone de un  modo de calentamiento automático de manos libres. Airis Dabble es para usar con cera, y dispone de una batería de 900mAh con gran capacidad y voltajes variables, así mismo, tiene función de precalentamiento y se carga mediante Micro USB.'
+    },
+    
+    {
+      productId: 21,
+      productImage: RascadorElectricoSD,
+      productTitle:'Rascador eléctrico Snoop Dog',
+      productPath:'/collections/ElectronicsProducts/RascadorElectricoSD',
+      productPrice: 90000,
+      productDetails:'Rascador eléctrico Snoop Dog'
+    },
   ],
   GlassProducts: [
     {
@@ -177,7 +208,14 @@ const data = {
   ],
   MedicinalProducts: [
   ],
-  PaperProducts: [
+  PaperProducts: [/* 
+    { productId: 19,
+      productImage: HighHemp6PaperCones,
+      productTitle: 'Conos de papel x6 High Hemp',
+      productPath: '/collections/PaperProducts/HighHemp6PaperCones',
+      productPrice: 15000,
+      productDetails: 'Conos de papel x6 marca High Hemp.'
+    }, */
   ],
 
 };
