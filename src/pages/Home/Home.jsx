@@ -8,9 +8,14 @@ import Cookies from 'universal-cookie'
 import logosPago from '../../images/pago-logos2.png'
 import papelesCategory from '../../images/papeles.jpg'
 import vidriosCategory from '../../images/vidrios.jpg'
-import fuegoCategory from '../../images/fuego.png'
+import fuegoCategory from '../../images/fuego.jpg'
 import electroCategory from '../../images/electronicos.jpg'
-import Brands from '../../components/Brands/Brands';
+import dabsCategory from '../../images/dabs.jpg'
+import growCategory from '../../images/grow.jpg'
+import kitsCategory from '../../images/kits.jpg'
+import medicinalCategory from '../../images/medicinal.jpg'
+import paratuaptoCategory from '../../images/apto.jpg'
+import Brands from '../../components/Brands/Brands'
 
 const Home = () => {
 
@@ -94,23 +99,23 @@ const Home = () => {
           buttonTitle='ELECTRÓNICOS'
           buttonPath='/collections/Electronics' />
         <CategoryCard 
-          cardImage={papelesCategory}
+          cardImage={paratuaptoCategory}
           buttonTitle="PARA TU APTO"
           buttonPath="/collections/IndoorAccesories" />
         <CategoryCard 
-          cardImage={papelesCategory}
+          cardImage={dabsCategory}
           buttonTitle='DABS'
           buttonPath='/collections/Dabs' />
         <CategoryCard 
-          cardImage={papelesCategory}
+          cardImage={kitsCategory}
           buttonTitle='KITS'
           buttonPath='/collections/Kits' />
         <CategoryCard 
-          cardImage={papelesCategory}
+          cardImage={growCategory}
           buttonTitle='GROW'
           buttonPath='/collections/Grow' />
          <CategoryCard 
-          cardImage={papelesCategory}
+          cardImage={medicinalCategory}
           buttonTitle='MEDICINAL'
           buttonPath='/collections/Medicinal' />
       </div>
