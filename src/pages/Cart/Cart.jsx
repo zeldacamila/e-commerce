@@ -26,7 +26,7 @@ const Cart = () => {
   let amount = 0
   // Función para formatear el mensaje
   const formatMessage = () => {
-    let message = "Hola! Voy a llevar estas cositas:\n\n*Detalles del Pedido:*\n";
+    let message = "Hey! Quiero estos productos por favor:\n\n*Detalles del Pedido:*\n";
     productsCart.forEach(product => {
       amount += product.productQuantity * product.productPrice;
       message += `x${product.productQuantity} -${product.productTitle} $${product.productPrice} c/u\n`;

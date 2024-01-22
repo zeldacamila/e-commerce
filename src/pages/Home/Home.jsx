@@ -130,11 +130,6 @@ const Home = () => {
                 {/*<img className='logoInfoPago' src={logoDV} alt=''/>
               <img className='logoInfoPago' src={logoNQ} alt=''/> */}
             </div>
-            {/* <div className='InfoPago-container_details'>
-            <p className='infoAccounts'>3006728530</p>
-            <p className='infoAccounts'>3022711169</p>
-            <p className='infoAccounts'>Ahorros: 91968206503</p>
-            </div> */}
           </div>
       </div>
     </div>
