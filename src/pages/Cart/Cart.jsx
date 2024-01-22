@@ -24,6 +24,15 @@ const Cart = () => {
   }
 
   let amount = 0
+  const handlePayment = () => {
+    html2canvas(document.body).then(canvas => {
+      // Convertir el canvas a imagen
+      const image = canvas.toDataURL('image/png');
+      // Preparar el enlace de WhatsApp
+      const whatsappUrl = `https://wa.me/?text=${encodeURIComponent('Tu mensaje aquí')}%20${encodeURIComponent(image)}`;
+      // Abrir el enlace
+      window.open(whatsappUrl, '_blank');
+    });
 
   return (
     <div className='Cart-container'>
@@ -53,7 +62,7 @@ const Cart = () => {
           <button onClick={handleGoToShop} className='buttonCart1'>Seguir comprando</button>
           <button onClick={handleClickCleanCart} className='buttonCart2'>Vaciar bolsa</button>
         </div>
-        <button onClick={() => alert('Implementar Pasarela de Pagos!')} className='buttonCart3'>Pagar 💰</button>
+        <button onClick={handlePayment} className='buttonCart3'>Pagar 💰</button>
       </div>
     </div>
   )
