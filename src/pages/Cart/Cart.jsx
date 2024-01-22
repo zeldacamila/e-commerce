@@ -24,15 +24,24 @@ const Cart = () => {
   }
 
   let amount = 0
-  const handlePayment = () => {
-    html2canvas(document.body).then(canvas => {
-      // Convertir el canvas a imagen
-      const image = canvas.toDataURL('image/png');
-      // Preparar el enlace de WhatsApp
-      const whatsappUrl = `https://wa.me/?text=${encodeURIComponent('Tu mensaje aquí')}%20${encodeURIComponent(image)}`;
-      // Abrir el enlace
-      window.open(whatsappUrl, '_blank');
+  // Función para formatear el mensaje
+  const formatMessage = () => {
+    let message = "Hola! Voy a llevar estas cositas:\n\n*Detalles del Pedido:*\n";
+    productsCart.forEach(product => {
+      amount += product.productQuantity * product.productPrice;
+      message += `x${product.productQuantity} -${product.productTitle} $${product.productPrice} c/u\n`;
     });
+    message += `\n*TOTAL: COP $${amount}*`;
+    return message;
+  }
+
+  // Función para enviar mensaje por WhatsApp
+  const sendWhatsAppMessage = () => {
+    const message = formatMessage();
+    const whatsappNumber = '3022711169'; // Cambia esto por el número de destino
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  }
 
   return (
     <div className='Cart-container'>
@@ -62,7 +71,7 @@ const Cart = () => {
           <button onClick={handleGoToShop} className='buttonCart1'>Seguir comprando</button>
           <button onClick={handleClickCleanCart} className='buttonCart2'>Vaciar bolsa</button>
         </div>
-        <button onClick={handlePayment} className='buttonCart3'>Pagar 💰</button>
+        <button onClick={sendWhatsAppMessage} className='buttonCart3'>Pagar 💰</button>
       </div>
     </div>
   )
