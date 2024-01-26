@@ -43,8 +43,8 @@ import VapoAirisDabble from './images/products-images/miniatura_vaporizador_airi
 import VapoAirisDabble2 from './images/products-images/vaporizador_airis_dabble.jpg'
 import VapoAirisDabble3 from './images/products-images/vaporizador_airis_dabble2.jpg'
 import RascadorElectricoSD from './images/products-images/miniatura_rascador_electrico_snoopDog.jpg'
-
-import HighHemp6PaperCones from './images/products-images/papercones6_highhemp.jpg'
+import PapelSmokingRedRegular from './images/products-images/papel_smokingred_regular.jpg'
+import PapelSmokingRedRegular2 from './images/products-images/papel_smokingred_regular2.jpg'
 
 const data2 = {
   allProducts: [
@@ -362,22 +362,22 @@ const data2 = {
       productPriceBefore: null,
       productDiscount: null,
       productDetails: 'Rascador eléctrico Snoop Dog'
-    },/* 
+    }, 
     {
       productId: 19,
-      productName: 'HighHemp6PaperCones',
+      productName: 'PapelSmokingRedRegular',
       productQuantity: 1,
-      productImage: HighHemp6PaperCones,
-      productImg2: null,
+      productImage: PapelSmokingRedRegular,
+      productImg2: PapelSmokingRedRegular2,
       productImg3: null,
       productImg4: null,
-      productTitle:'Conos de papel x6 High Hemp',
-      productPath:'/collections/PaperProducts/HighHemp6PaperCones',
-      productPrice: 15000,
+      productTitle:'Papel Smoking Red Regular',
+      productPath:'/collections/PaperProducts/PapelSmokingRedRegular',
+      productPrice: 5000,
       productPriceBefore: null,
       productDiscount: null,
-      productDetails:'Conos de papel x6 marca High Hemp.'
-    }, */
+      productDetails:'Red Regular es un papel de enrolar clásico de combustión lenta. Además, cuenta con Certificado FSC® y está fabricado con goma vegetal 100% natural, sin colorantes ni otros aditivos.'
+    },
   ],
 
 };

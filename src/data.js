@@ -18,9 +18,7 @@ import BateriaLeafBuddi from './images/products-images/miniatura_bateria_leafbud
 import BateriaYocanUNI from './images/products-images/miniatura_bateria_yocan_UNI.jpg'
 import VapoAirisDabble from './images/products-images/miniatura_vaporizador_airis_dabble.jpg'
 import RascadorElectricoSD from './images/products-images/miniatura_rascador_electrico_snoopDog.jpg'
-
-import HighHemp6PaperCones from './images/products-images/papercones6_highhemp.jpg'
-
+import PapelSmokingRedRegular from './images/products-images/papel_smokingred_regular.jpg'
 
 const data = {
   FireProducts: [
@@ -208,14 +206,14 @@ const data = {
   ],
   MedicinalProducts: [
   ],
-  PaperProducts: [/* 
+  PaperProducts: [
     { productId: 19,
-      productImage: HighHemp6PaperCones,
-      productTitle: 'Conos de papel x6 High Hemp',
-      productPath: '/collections/PaperProducts/HighHemp6PaperCones',
-      productPrice: 15000,
-      productDetails: 'Conos de papel x6 marca High Hemp.'
-    }, */
+      productImage: PapelSmokingRedRegular,
+      productTitle: 'Papel Smoking Red Regular',
+      productPath: '/collections/PaperProducts/PapelSmokingRedRegular',
+      productPrice: 5000,
+      productDetails: 'Red Regular es un papel de enrolar clásico de combustión lenta. Además, cuenta con Certificado FSC® y está fabricado con goma vegetal 100% natural, sin colorantes ni otros aditivos.'
+    },
   ],
 
 };
