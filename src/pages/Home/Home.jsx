@@ -1,6 +1,8 @@
 import React from 'react'
-/* import BrandsSlider from '../../components/BrandsSlider/Brands' */
 import CategoryCard from '../../components/CategoryCard/CategoryCard'
+import Brands from '../../components/Brands/Brands'
+import FollowUs from '../../components/FollowUs/FollowUs';
+import VisitUs from '../../components/VisitUs/VisitUs';
 import { Button, Modal } from 'antd'
 import { useState } from 'react'
 import 'animate.css'
@@ -15,7 +17,8 @@ import growCategory from '../../images/grow.jpg'
 import kitsCategory from '../../images/kits.jpg'
 import medicinalCategory from '../../images/medicinal.jpg'
 import paratuaptoCategory from '../../images/apto.jpg'
-import Brands from '../../components/Brands/Brands'
+
+
 
 const Home = () => {
 
@@ -70,17 +73,7 @@ const Home = () => {
       >
         <p>{modalText}</p>
       </Modal>)}   
-      {/* <p className='advertising'>Envíos gratis por compras superiores a 200.000 COP</p> */}
-      {/* <h1 className='animate__animated animate__fadeInLeft'>MARCAS ALIADAS</h1> */}
-      {/*   <div className='Brands-container'>
-        <BrandsSlider />
-      </div> */}
-      <Brands />
       <h1 className='animate__animated animate__fadeInLeft'>🛸</h1>
-      {/* <h1 className='palace'>PRODUCTOS</h1>
-      <h1 className='creamcake'>PRODUCTOS</h1>
-      <h1 className='callingheart'>PRODUCTOS</h1>
-      <h1 className='billiondreams'>PRODUCTOS</h1> */}
       <div className='Cards-container'>
         <CategoryCard 
           cardImage={papelesCategory}
@@ -119,16 +112,14 @@ const Home = () => {
           buttonTitle='MEDICINAL'
           buttonPath='/collections/Medicinal' />
       </div>
-      
-
-      {/* <h1 className='animate__animated animate__fadeInLeft'>VISITA NUESTRO BLOG</h1> */}
+      <Brands />
+      <FollowUs />
+      <VisitUs />
       <div className='InfoPago-container'>
         <h1 className='paymentMethods-title' >💸Medios de pago</h1>
           <div className="InfoPago-container-notitle">
             <div className='InfoPago-container_logos'>
               <img className='logoInfoPago' src={logosPago} alt='' />
-                {/*<img className='logoInfoPago' src={logoDV} alt=''/>
-              <img className='logoInfoPago' src={logoNQ} alt=''/> */}
             </div>
           </div>
       </div>

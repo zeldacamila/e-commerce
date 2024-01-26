@@ -5,12 +5,11 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  background-color: rgba(0, 0, 0, 0.09);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 175px;
   height: 215px;
   margin: 5px;
   margin-bottom: 15px;
-/*   border: 1px solid rgb(1, 138, 0); */
   border-radius: 15px;
   box-shadow: rgba(1, 138, 0, 0.19) 5px 20px 30px, rgba(1, 138, 0, 0.23) 5px 20px 20px;
   .buttonPath {
@@ -41,7 +40,6 @@
     width: 280px;
     height: 360px;
     margin: 15px;
-    /* border: 1px solid rgb(1, 138, 0); */
     border-radius: 15px;
     box-shadow: rgba(1, 138, 0, 0.19) 5px 20px 30px, rgba(1, 138, 0, 0.23) 5px 20px 20px;
     .buttonPath {

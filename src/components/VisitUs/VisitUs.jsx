@@ -16,9 +16,8 @@ const VisitUs = () => {
         <div className="VisitUs-notitle-container">
           <div className="VisitUsDetails-container">
             <p>¡Sin perderse pues!</p>
-            <p>A una cuadra del metro 🚇 (Estación Bello)</p>
-            <p>Barrio Manchester</p>
-            {/* <p>Abrimos todos los días de 12 a 7 PM</p> */}
+            <p>A una cuadra del metro 🚇</p>
+            <p>(Estación Bello)</p>
           </div>
           <div className='VisitUsSlider-container'>
             <Swiper
