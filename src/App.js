@@ -33,13 +33,9 @@ function App() {
         <Route path='/collections/Grow' element={<SectionGrow />} />
         <Route path='/collections/Medicinal' element={<SectionMedicinal />} />
         <Route path='/collections/:Collection/:Product' element={<ProductPage />} />
-{/*         <Route path='/logo' element={<Logo />}/>
-        <Route path='/visitus' element={<VisitUs />}/> */}
         <Route path='/cart' element={<Cart />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
-      {/* <FollowUs />
-      <VisitUs /> */}
 
     </div>
   );

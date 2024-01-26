@@ -50,7 +50,7 @@ const ProductCard = ({productImage, productId, productTitle, productPath, produc
           <p className='productPrice'>COP ${productPrice}</p>
         </div>
       </a> 
-      <button className='addtocart_button' onClick={handleAddtoCart} >Agregar a la <img className='bag_logo' src={cartImg2} alt='' /></button>
+      <button className='addtocart_button' onClick={handleAddtoCart} >Comprar <img className='bag_logo' src={cartImg2} alt='' /></button>
     </div>
   )
 }

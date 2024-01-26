@@ -19,7 +19,7 @@
   }
 }
 :root {
-  --swiper-theme-color: #018A00 !important;
+  --swiper-theme-color: #e6c32b !important;
 }
 .swiper-slide {
   background-position: center;
@@ -99,7 +99,6 @@
         margin-bottom: 32px;
     }
 }
-
 }
 
 .details{
@@ -123,16 +122,22 @@
     font-size: 0.94em;
     color: variables.$Light-grayish-blue;
     line-height: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     text-align: justify;
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 10px 10px 20px 10px;
+    border-radius: 14px;
 }
 &_price{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 24px;
-    color: rgb(1, 138, 0);
+    color: #e6c32b;
     align-items: center;
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 14px;
 }
 &_now{
     font-size: 1.8em;
@@ -150,7 +155,7 @@
 }
 &_before{
     font-weight: 700;
-    color: rgb(1, 138, 0);
+    color: #e6c32b;
     text-decoration: line-through;
 }
 &_button{
@@ -190,7 +195,6 @@
   border-radius: 8px;
   margin-bottom: 5px;
   background-color: variables.$Light-grayish-blue;
-  // align-items: center;
   &_minus{
       @include mixins.changeNumber(24px, 5px);
   }
@@ -240,7 +244,6 @@
   }
   &_image{
       width: 50px;
-      // height: 50px;
       border-radius: 4px;
   }
   &_price span{
@@ -260,7 +263,6 @@
   &_background{
     @include mixins.modal-background;
     display: none;
-    //display: grid;
     place-content: center;
   }
   &_close-container{ 

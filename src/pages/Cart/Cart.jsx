@@ -12,8 +12,6 @@ const Cart = () => {
   const {productscart} = useContext(CartContext)
   console.log('productscart', productscart)
   const productsCart = JSON.parse(localStorage.getItem('ProductsCart'))
-/*   const productCounter = productsCart.length;
-  console.log('productscart', productCounter) */
   const handleClickCleanCart = () => {
     localStorage.removeItem('ProductsCart')
     navigate('/cart')
@@ -67,11 +65,12 @@ const Cart = () => {
         <h3 >Total: COP ${amount}</h3>
       </div>
       <div className="CheckoutCart-container">
-        <div className="CheckoutCartWithoutbuttoncart-container">
+      <button onClick={sendWhatsAppMessage} className='buttonCart3'>Pagar 💰</button>
+          <div className="CheckoutCartWithoutbuttoncart-container">
           <button onClick={handleGoToShop} className='buttonCart1'>Seguir comprando</button>
-          <button onClick={handleClickCleanCart} className='buttonCart2'>Vaciar bolsa</button>
+          <button onClick={handleClickCleanCart} className='buttonCart2'>Vaciar bolsa 🗑️</button>
         </div>
-        <button onClick={sendWhatsAppMessage} className='buttonCart3'>Pagar 💰</button>
+        
       </div>
     </div>
   )

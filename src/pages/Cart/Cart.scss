@@ -46,9 +46,17 @@
 }
 .ProductsCart-container {
   h3 {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
     text-align: center;
-    font-size:25px;
+    font-size:30px;
+    color:#e6c32b;
+    background-color: black;
+    border: 1px solid #e6c32b;
+    border-radius: 15px;
   }
 }
 .baglogo {
@@ -59,51 +67,54 @@
 .buttonCart1 {
   width: 180px;
   height: 35px;
-  background-color: rgb(207, 243, 95);
-  border: 0;
+  background-color: transparent;
+  border: 1px solid #e6c32b;
   border-radius: 15px;
-  color:rgb(0, 88, 0);
+  color:#e6c32b;
   font-family: variables.$Font;
   font-size: 18px;
   font-weight: 700;
   margin-left: 5px;
   margin-right: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 5px;
 }
 .buttonCart2 {
   width: 170px;
   height: 35px;
-  background-color: rgb(207, 243, 95);
-  border: 0;
+  background-color: transparent;
+  border: 1px solid #e6c32b;
   border-radius: 15px;
-  color:rgb(0, 88, 0);
+  color:#e6c32b;
   font-family: variables.$Font;
   font-size: 18px;
   font-weight: 700;
   margin-left: 5px;
   margin-right: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 5px;
 }
 .buttonCart3 {
   width: 140px;
-  height: 35px;
-  background-color: rgb(207, 243, 95);
-  border: 0;
+  height: 45px;
+  background-color: transparent;
+  border: 1px solid #e6c32b;
   border-radius: 15px;
-  color:rgb(0, 88, 0);
+  color:#e6c32b;
   font-family: variables.$Font;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 5px;
 }
 .CheckoutCart-container {
   margin-top: 20px;
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 10px;
   align-items: center;
+  border: none;
+  background-color: rgb(0,0,0,0.4);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 15px;
 }

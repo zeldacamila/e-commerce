@@ -12,12 +12,8 @@ import { useParams } from 'react-router-dom'
 const ProductPage = () => {
   const {allProducts} = data2
   let productPath = useParams();
-  let productName = productPath.Product
-/*   console.log('productPath', productPath)
-  console.log('productPath.Collection', productPath.Collection)
-  console.log('productPath.Product', productPath.Product) */
+  let productName = productPath.Product;
   const product = allProducts.find((x) => x.productName === productName);
-  /* console.log('product', product) */
 
   return (
     <div className='ProductPage'>
@@ -52,9 +48,8 @@ const ProductPage = () => {
           <h2 className='details_title'>{product.productTitle}</h2>
           <p className='details_description'>{product.productDetails}</p>
           <div className="details_price">
-            <p className="details_now">COP ${product.productPrice} {product.productDiscount !== null ? <span className='details_discount'>%{product.productDiscount}</span> : <div></div>}{/* <span className='details_discount'>%{product.productDiscount}</span> */}</p>
+            <p className="details_now">COP ${product.productPrice} {product.productDiscount !== null ? <span className='details_discount'>-{product.productDiscount}%</span> : <div></div>}{/* <span className='details_discount'>%{product.productDiscount}</span> */}</p>
             {product.productPriceBefore !== null ? <p className="details_before">COP ${product.productPriceBefore} </p> : <div></div>}
-            {/* <p className="details_before">COP ${product.productPriceBefore} </p> */}
           </div>
         </article>
       </section>

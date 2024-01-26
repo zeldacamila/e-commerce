@@ -24,7 +24,7 @@ const Home = () => {
 
   const [open, setOpen] = useState(true);
   const [confirmLoading, setConfirmLoading] = useState(false);
-  const [modalText, setModalText] = useState('Para permitir tu ingreso a la CASA verificaremos si eres mayor de edad. ¿Certificas que eres mayor de 18 años?');
+  const [modalText, setModalText] = useState('Para acceder a la CASA debes ser un adulto. ¿Certificas que eres mayor de 18 años?');
   const cookies = new Cookies()
   const handleYes = () => {
     cookies.set('modal', 'yes', {options: {path: '/', maxAge:60*60*24*30}})
