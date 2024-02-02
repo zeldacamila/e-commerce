@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
   .FollowUs-title {
     color: rgb(242, 244, 237);
     font-family: 'CallingHeart', sans-serif;
@@ -76,7 +77,7 @@
     height: 140px;
     margin-bottom: 120px;
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.73);
+    background-color: rgba(0, 0, 0, 0.96);
     color:  rgb(242, 244, 237);
     font-family: variables.$Font;
     font-size: 26px;
@@ -90,6 +91,7 @@
   justify-content: center;
   text-decoration: none;
   color:  rgb(242, 244, 237);
+  background-color: rgba(0, 0, 0, 0.96);
   .FollowUsImg-container{
     height: 80px;
     img {

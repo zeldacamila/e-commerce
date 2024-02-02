@@ -5,6 +5,7 @@
   align-items: flex-start;
   justify-content: center;
   height: 270px;
+  background-color: rgba(0, 0, 0, 0.8);
   h2 {
     color: rgb(242, 244, 237);
     font-family: 'CallingHeart', sans-serif;
@@ -36,6 +37,7 @@
   justify-content: center;
   margin: 0px;
   padding: 0px;
+  background-color: rgba(0, 0, 0, 0.92);
   @media (min-width:1125px) {
     display: none;
   }

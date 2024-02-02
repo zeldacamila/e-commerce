@@ -12,6 +12,10 @@
     width: 100%;
     cursor: pointer;
   }
+  .header_logo-not-home {
+    width: 75%;
+    cursor: pointer;
+  }
   .header_logo2 {
     padding-top: 3px;
     width: 160%;
@@ -73,4 +77,21 @@
   }
 }
 
-
+.header-not-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-bottom: 2px solid #e6c32b;
+  padding: 0 5px;
+  @media (min-width:1125px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 190px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom: 3px solid #e6c32b;
+    padding: 0 5px;
+  }
+}
