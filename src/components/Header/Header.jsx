@@ -22,7 +22,7 @@ const Header = () => {
           <img className='header_logo2' src={logo2} alt ="logo2"/>
         </div>
         <div className='cartlogo-container'>
-          <img className='cart_logo' src={cartImg} alt ='cartImg' onClick={handleClickCart} />
+          
         </div>
       </header>
   )

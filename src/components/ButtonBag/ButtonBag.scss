@@ -1,0 +1,32 @@
+.BagButton-container {
+    background-color: transparent;
+    border: 0;
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 110px;
+    right: 5px;
+    z-index: 7;
+    .logoBagpc-container{
+      display: none;
+    }
+    @media(min-width: 1115px){
+      .logoBagpc-container{
+        cursor: pointer;
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 280px;
+        width: 220px;
+        height: 80px;
+      }
+      .logoBagmobile-container{
+        display: none;
+      }
+    }
+  }
+  
+  #logoBag {
+    height: 100%;
+  }

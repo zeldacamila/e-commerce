@@ -14,12 +14,13 @@ import SectionMedicinal from './pages/Sections/SectionMedicinal';
 import ProductPage from './pages/ProductPage/ProductPage';
 import ButtonWhatsapp from './components/ButtonWhatsapp/ButtonWhatsapp';
 import Cart from './pages/Cart/Cart';
+import ButtonBag from './components/ButtonBag/ButtonBag';
 
 function App() {
   return (
     <div className="main-container">
       <Header />
-
+      <ButtonBag />
       <ButtonWhatsapp />
       <Routes>
         <Route path='/' element={<Home />} />

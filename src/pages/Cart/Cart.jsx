@@ -10,7 +10,7 @@ const Cart = () => {
 
   const navigate = useNavigate()
   const {productscart} = useContext(CartContext)
-  console.log('productscart', productscart)
+  //console.log('productscart', productscart)
   const productsCart = JSON.parse(localStorage.getItem('ProductsCart'))
   const handleClickCleanCart = () => {
     localStorage.removeItem('ProductsCart')
