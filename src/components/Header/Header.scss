@@ -26,6 +26,16 @@
       cursor: pointer;
     }
   }
+  .header_logo2-not-home {
+    padding-top: 3px;
+    width: 100%;
+    cursor: pointer;
+    @media (min-width:1125px) {
+      padding-top: 3px;
+      width: 200%;
+      cursor: pointer;
+    }
+  }
 }
 .cartlogo-container{
   width: 100px;
@@ -89,9 +99,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 190px;
+    height: 110px;
     background-color: rgba(0, 0, 0, 0.9);
     border-bottom: 3px solid #e6c32b;
     padding: 0 5px;
   }
 }
+
