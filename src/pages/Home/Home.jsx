@@ -52,6 +52,10 @@ const Home = () => {
     setModalText('Lo sentimos, no puedes acceder si no eres mayor de edad.');
     setShowReloadButton(true)
   };
+  const reloadPage = () => {
+    window.location.reload();
+  };
+  
   return (
     <div className='Home-container'>
       { cookies.get('modal') === 'yes' ? <></> : (
