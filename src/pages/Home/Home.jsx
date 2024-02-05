@@ -18,7 +18,7 @@ import growCategory from '../../images/grow.jpg'
 import kitsCategory from '../../images/kits.jpg'
 import medicinalCategory from '../../images/medicinal.jpg'
 import paratuaptoCategory from '../../images/apto.jpg'
-import logoImage from '../../images/modalLogo.jpg'
+import logoImage from '../../images/modalLogo.png'
 
 
 
