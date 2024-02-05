@@ -60,7 +60,6 @@ const Home = () => {
     <div className='Home-container'>
       { cookies.get('modal') === 'yes' ? <></> : (
       <Modal
-        title={disabled}
         open={open}
         onOk={handleOk}
         confirmLoading={confirmLoading}
