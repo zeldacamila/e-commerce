@@ -61,13 +61,13 @@ const Home = () => {
     <div className='Home-container'>
       { cookies.get('modal') === 'yes' ? <></> : (
       <Modal
-        title={<img src={logoImage} alt="Logo" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '30px', height: '30px' }}/>}
+        title={<img src={logoImage} alt="Logo" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', height: '80px' }}/>}
         open={open}
         onOk={handleOk}
         confirmLoading={confirmLoading}
         onCancel={handleCancel}
         style={{
-          top: '50%',
+          top: '30%',
           fontFamily: 'Oswald',
         }}
         footer={[
@@ -75,10 +75,10 @@ const Home = () => {
             <Button icon={<ReloadOutlined />} onClick={reloadPage}></Button>
           ) : (
             <>
-              <Button style={{ border: "2px solid #e6c32b", color: '#e6c32b', backgroundColor: '#857052', fontFamily: 'Oswald' }} onClick={handleCancel}>
+              <Button style={{ border: "2px solid #432a19", color: '#432a19', fontFamily: 'Oswald' }} onClick={handleCancel}>
                 NO
               </Button>
-              <Button style={{ border: "2px solid #e6c32b", color: '#e6c32b', backgroundColor: '#857052', fontFamily: 'Oswald' }} onClick={handleOk}>
+              <Button style={{ border: "2px solid #e6c32b", color: '#e6c32b', backgroundColor: '#432a19', fontFamily: 'Oswald' }} onClick={handleOk}>
                 SÍ
               </Button>
             </>
