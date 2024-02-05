@@ -25,7 +25,7 @@ const Home = () => {
 
   const [open, setOpen] = useState(true);
   const [confirmLoading, setConfirmLoading] = useState(false);
-  const [modalText, setModalText] = useState('Para acceder confirma que eres mayor de 18 años');
+  const [modalText, setModalText] = useState('Para acceder, confirma que eres mayor de 18 años:');
   const [showReloadButton, setShowReloadButton] = useState(false);
 
   const cookies = new Cookies()
@@ -60,13 +60,14 @@ const Home = () => {
     <div className='Home-container'>
       { cookies.get('modal') === 'yes' ? <></> : (
       <Modal
-        title='BIENVENIDO A CASA MARACACHAFA'
+        title={disabled}
         open={open}
         onOk={handleOk}
         confirmLoading={confirmLoading}
         onCancel={handleCancel}
         style={{
-          top: 80,
+          top: '50%',
+          border: "2px solid #e6c32b",
           fontFamily: 'Oswald',
         }}
         footer={[
@@ -74,10 +75,10 @@ const Home = () => {
             <Button icon={<ReloadOutlined />} onClick={reloadPage}></Button>
           ) : (
             <>
-              <Button style={{ border: "2px solid #e6c32b", color: '#e6c32b', backgroundColor: '#655645', fontFamily: 'Oswald' }} onClick={handleCancel}>
+              <Button style={{ border: "2px solid #e6c32b", color: '#e6c32b', backgroundColor: '#857052', fontFamily: 'Oswald' }} onClick={handleCancel}>
                 NO
               </Button>
-              <Button style={{ border: "2px solid #e6c32b", color: '#e6c32b', backgroundColor: '#655645', fontFamily: 'Oswald' }} onClick={handleOk}>
+              <Button style={{ border: "2px solid #e6c32b", color: '#e6c32b', backgroundColor: '#857052', fontFamily: 'Oswald' }} onClick={handleOk}>
                 SÍ
               </Button>
             </>
