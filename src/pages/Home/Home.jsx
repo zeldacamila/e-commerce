@@ -55,7 +55,7 @@ const Home = () => {
   const reloadPage = () => {
     window.location.reload();
   };
-  s
+  
   return (
     <div className='Home-container'>
       { cookies.get('modal') === 'yes' ? <></> : (
@@ -76,7 +76,7 @@ const Home = () => {
             <>
               <Button style={{ border: "2px solid #e6c32b", color: '#e6c32b', backgroundColor: '#655645', fontFamily: 'Oswald' }} onClick={handleCancel}>
                 NO
-              </Button>,
+              </Button>
               <Button style={{ border: "2px solid #e6c32b", color: '#e6c32b', backgroundColor: '#655645', fontFamily: 'Oswald' }} onClick={handleOk}>
                 SÍ
               </Button>
