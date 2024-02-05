@@ -67,7 +67,7 @@ const Home = () => {
         confirmLoading={confirmLoading}
         onCancel={handleCancel}
         style={{
-          top: '30%',
+          top: '10%',
           fontFamily: 'Oswald',
         }}
         footer={[
