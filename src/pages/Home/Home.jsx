@@ -18,6 +18,7 @@ import growCategory from '../../images/grow.jpg'
 import kitsCategory from '../../images/kits.jpg'
 import medicinalCategory from '../../images/medicinal.jpg'
 import paratuaptoCategory from '../../images/apto.jpg'
+import logoImage from '../../images/modalLogo.jpg'
 
 
 
@@ -60,13 +61,13 @@ const Home = () => {
     <div className='Home-container'>
       { cookies.get('modal') === 'yes' ? <></> : (
       <Modal
+        title={<img src={logoImage} alt="Logo" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '30px', height: '30px' }}/>}
         open={open}
         onOk={handleOk}
         confirmLoading={confirmLoading}
         onCancel={handleCancel}
         style={{
           top: '50%',
-          border: "2px solid #e6c32b",
           fontFamily: 'Oswald',
         }}
         footer={[
