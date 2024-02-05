@@ -19,8 +19,8 @@ const Header = () => {
     <header className={`header ${!isHomePage ? 'header-not-home' : ''}`}>
         <div className='empty'></div>
         <div className='logo-container'>
-        <img className={`header_logo ${!isHomePage ? 'header_logo-not-home' : ''}`} src={logoToShow} alt="logo" onClick={() => navigate('/')} />
-        <img className='header_logo2' src={logo2} alt ="logo2" onClick={handleClickLogo}/>
+        <img loading='lazy' className={`header_logo ${!isHomePage ? 'header_logo-not-home' : ''}`} src={logoToShow} alt="logo" onClick={() => navigate('/')} />
+        <img loading='lazy' className='header_logo2' src={logo2} alt ="logo2" onClick={handleClickLogo}/>
         </div>
         <div className='cartlogo-container'>
         </div>
