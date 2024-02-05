@@ -72,7 +72,11 @@ const Home = () => {
         }}
         footer={[
           showReloadButton ? (
-            <Button icon={<ReloadOutlined />} onClick={reloadPage}></Button>
+            <Button 
+              className="reloadButton"
+              icon={<ReloadOutlined />}
+              onClick={reloadPage}>
+            </Button>
           ) : (
             <>
               <Button style={{ border: "2px solid #432a19", color: '#432a19', fontFamily: 'Oswald' }} onClick={handleCancel}>

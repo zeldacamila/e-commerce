@@ -237,3 +237,10 @@
     }
   }
 }
+
+
+.reloadButton:active,
+.reloadButton:focus {
+  color: #432a19 !important; /* Cambia el color del texto, si es necesario */
+  border-color: #432a19 !important; /* Cambia el color del borde, si es necesario */
+}
