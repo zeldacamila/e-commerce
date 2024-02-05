@@ -1,7 +1,6 @@
 import React from 'react'
-import casa2 from '../../images/casa2.jpeg'
-import casa3 from '../../images/casa3.jpeg'
-import casa5 from '../../images/casa5.jpeg'
+import casa1 from '../../images/casa1.png'
+import casa2 from '../../images/casa2.jpg'
 import { Swiper, SwiperSlide } from "swiper/react"
 import { EffectCoverflow, Pagination, Autoplay } from "swiper"
 import "swiper/css";
@@ -39,13 +38,10 @@ const VisitUs = () => {
             >
               
               <SwiperSlide>
+                <img src={casa1} alt='' />
+              </SwiperSlide>
+              <SwiperSlide>
                 <img src={casa2} alt='' />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={casa3} alt='' />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={casa5} alt='' />
               </SwiperSlide>
             </Swiper>
           </div>
