@@ -6,7 +6,7 @@ const CategoryCard = ({cardImage, buttonTitle, buttonPath}) => {
     <div className='HomeCard-container'>
       <a className='buttonPath' href={buttonPath} alt=''>
         <div className='cardImg-container'>
-            <img src={cardImage} alt='' />
+            <img loading="lazy" src={cardImage} alt='' />
         </div>
         <div>
           <Button 

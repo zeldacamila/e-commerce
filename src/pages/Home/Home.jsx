@@ -49,7 +49,6 @@ const Home = () => {
       }
   };
   const handleCancel = () => {
-    console.log('Clicked cancel button');
     setModalText('Lo sentimos, no puedes acceder si no eres mayor de edad.');
     setShowReloadButton(true)
   };
@@ -61,7 +60,7 @@ const Home = () => {
     <div className='Home-container'>
       { cookies.get('modal') === 'yes' ? <></> : (
       <Modal
-        title={<img src={logoImage} alt="Logo" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', height: '80px' }}/>}
+        title={<img loading='lazy' src={logoImage} alt="Logo" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', height: '80px' }}/>}
         open={open}
         onOk={handleOk}
         confirmLoading={confirmLoading}
@@ -137,7 +136,7 @@ const Home = () => {
         <h1 className='paymentMethods-title' >💸Medios de pago</h1>
           <div className="InfoPago-container-notitle">
             <div className='InfoPago-container_logos'>
-              <img className='logoInfoPago' src={logosPago} alt='' />
+              <img loading="lazy" className='logoInfoPago' src={logosPago} alt='' />
             </div>
           </div>
       </div>

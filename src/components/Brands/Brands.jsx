@@ -31,18 +31,18 @@ const Brands = () => {
             modules={[ Autoplay]}
             className="mySwiper"
           >
-            <SwiperSlide ><img className='Brand-img1' src={brand1} alt='' /></SwiperSlide>
-            <SwiperSlide ><img className='Brand-img2' src={brand2} alt='' /></SwiperSlide>
-            <SwiperSlide ><img className='Brand-img3' src={brand3} alt='' /></SwiperSlide>
-            <SwiperSlide ><img className='Brand-img' src={brand2} alt='' /></SwiperSlide>
-            <SwiperSlide ><img className='Brand-img' src={brand3} alt='' /></SwiperSlide>
-            <SwiperSlide ><img className='Brand-img' src={brand4} alt='' /></SwiperSlide>
-            <SwiperSlide ><img className='Brand-img' src={brand5} alt='' /></SwiperSlide>
-            <SwiperSlide ><img className='Brand-img' src={brand6} alt='' /></SwiperSlide>
-            <SwiperSlide ><img className='Brand-img' src={brand7} alt='' /></SwiperSlide>
-            <SwiperSlide ><img className='Brand-img' src={brand8} alt='' /></SwiperSlide>
-            <SwiperSlide ><img className='Brand-img' src={brand9} alt='' /></SwiperSlide>
-            <SwiperSlide ><img className='Brand-img' src={brand10} alt='' /></SwiperSlide>
+            <SwiperSlide ><img loading='lazy' className='Brand-img1' src={brand1} alt='' /></SwiperSlide>
+            <SwiperSlide ><img loading='lazy' className='Brand-img2' src={brand2} alt='' /></SwiperSlide>
+            <SwiperSlide ><img loading='lazy' className='Brand-img3' src={brand3} alt='' /></SwiperSlide>
+            <SwiperSlide ><img loading='lazy' className='Brand-img' src={brand2} alt='' /></SwiperSlide>
+            <SwiperSlide ><img loading='lazy' className='Brand-img' src={brand3} alt='' /></SwiperSlide>
+            <SwiperSlide ><img loading='lazy' className='Brand-img' src={brand4} alt='' /></SwiperSlide>
+            <SwiperSlide ><img loading='lazy' className='Brand-img' src={brand5} alt='' /></SwiperSlide>
+            <SwiperSlide ><img loading='lazy' className='Brand-img' src={brand6} alt='' /></SwiperSlide>
+            <SwiperSlide ><img loading='lazy' className='Brand-img' src={brand7} alt='' /></SwiperSlide>
+            <SwiperSlide ><img loading='lazy' className='Brand-img' src={brand8} alt='' /></SwiperSlide>
+            <SwiperSlide ><img loading='lazy' className='Brand-img' src={brand9} alt='' /></SwiperSlide>
+            <SwiperSlide ><img loading='lazy' className='Brand-img' src={brand10} alt='' /></SwiperSlide>
           </Swiper>
         </div>
       </div>
