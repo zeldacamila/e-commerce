@@ -10,7 +10,7 @@ import brand8 from '../../images/brand8.jpg'
 import brand9 from '../../images/brand9.png'
 import brand10 from '../../images/brand10.png'
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination, Autoplay, EffectCards, EffectCreative, EffectCube } from "swiper"
+import { Autoplay } from "swiper"
 import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
