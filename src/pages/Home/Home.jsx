@@ -1,9 +1,10 @@
 import React from 'react'
 import CategoryCard from '../../components/CategoryCard/CategoryCard'
 import Brands from '../../components/Brands/Brands'
-import FollowUs from '../../components/FollowUs/FollowUs';
-import VisitUs from '../../components/VisitUs/VisitUs';
+import FollowUs from '../../components/FollowUs/FollowUs'
+import VisitUs from '../../components/VisitUs/VisitUs'
 import { Button, Modal } from 'antd'
+import { ReloadOutlined } from '@ant-design/icons'
 import { useState } from 'react'
 import 'animate.css'
 import Cookies from 'universal-cookie'
@@ -24,13 +25,14 @@ const Home = () => {
 
   const [open, setOpen] = useState(true);
   const [confirmLoading, setConfirmLoading] = useState(false);
-  const [modalText, setModalText] = useState('Para acceder a la CASA debes ser un adulto. ¿Certificas que eres mayor de 18 años?');
+  const [modalText, setModalText] = useState('Para acceder confirma que eres mayor de 18 años');
+  const [showReloadButton, setShowReloadButton] = useState(false);
+
   const cookies = new Cookies()
   const handleYes = () => {
     cookies.set('modal', 'yes', {options: {path: '/', maxAge:60*60*24*30}})
   }
   const handleOk = ({okButtonProps}) => {
-    
     if (modalText === 'Lo sentimos, no puedes acceder a nuestro contenido si no eres mayor de edad.') {
       return (
         okButtonProps={disabled: true}
@@ -47,7 +49,8 @@ const Home = () => {
   };
   const handleCancel = () => {
     console.log('Clicked cancel button');
-    setModalText('Lo sentimos, no puedes acceder a nuestro contenido si no eres mayor de edad.');
+    setModalText('Lo sentimos, no puedes acceder si no eres mayor de edad.');
+    setShowReloadButton(true)
   };
   return (
     <div className='Home-container'>
@@ -60,15 +63,21 @@ const Home = () => {
         onCancel={handleCancel}
         style={{
           top: 80,
-          fontFamily:'Oswald',
+          fontFamily: 'Oswald',
         }}
         footer={[
-          <Button style={{border: "2px solid rgb(1, 138, 0)", color: 'rgb(1, 138, 0)', fontFamily: 'Oswald'}} onClick={handleCancel}>
-            NO
-          </Button>,
-          <Button style={{border: "2px solid rgb(1, 138, 0)", color: 'rgb(1, 138, 0)', fontFamily: 'Oswald' }} onClick={handleOk}>
-            SÍ
-          </Button>
+          showReloadButton ? (
+            <Button icon={<ReloadOutlined />} onClick={reloadPage}></Button>
+          ) : (
+            <>
+              <Button style={{ border: "2px solid #e6c32b", color: '#e6c32b', fontFamily: 'Oswald' }} onClick={handleCancel}>
+                NO
+              </Button>,
+              <Button style={{ border: "2px solid #e6c32b", color: '#e6c32b', fontFamily: 'Oswald' }} onClick={handleOk}>
+                SÍ
+              </Button>
+            </>
+          )
         ]}
       >
         <p>{modalText}</p>
